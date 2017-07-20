@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F351E9B1F2121A800782C8F /* Level_2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F351E9A1F2121A800782C8F /* Level_2.sks */; };
+		8F351E9D1F214B0A00782C8F /* Level_3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F351E9C1F214B0A00782C8F /* Level_3.sks */; };
+		8F6C48121F1FBDE3003C5521 /* explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C48111F1FBDE3003C5521 /* explosion.png */; };
+		8F6C48141F1FBF93003C5521 /* particles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C48131F1FBF93003C5521 /* particles.sks */; };
+		8F6C481A1F1FFE42003C5521 /* earth-background-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C48191F1FFE42003C5521 /* earth-background-2.jpg */; };
+		8F6C481C1F1FFFF4003C5521 /* Earth-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C481B1F1FFFF4003C5521 /* Earth-background.jpg */; };
+		8F6E53E61F1E725100DE75DA /* alienShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E53E51F1E725100DE75DA /* alienShip.png */; };
+		8F6E53E91F1E7A3200DE75DA /* cannonFire.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E53E71F1E7A3200DE75DA /* cannonFire.png */; };
+		8F6E53EA1F1E7A3200DE75DA /* cannon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E53E81F1E7A3200DE75DA /* cannon.png */; };
+		8F6E53EC1F1E8D9F00DE75DA /* object.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E53EB1F1E8D9F00DE75DA /* object.sks */; };
+		8FB12C8D1F18248600FDB4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12C8C1F18248600FDB4DF /* AppDelegate.swift */; };
+		8FB12C911F18248600FDB4DF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12C901F18248600FDB4DF /* Actions.sks */; };
+		8FB12C931F18248600FDB4DF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12C921F18248600FDB4DF /* GameScene.swift */; };
+		8FB12C951F18248600FDB4DF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12C941F18248600FDB4DF /* GameViewController.swift */; };
+		8FB12C981F18248600FDB4DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12C961F18248600FDB4DF /* Main.storyboard */; };
+		8FB12C9A1F18248600FDB4DF /* cartoon archer release.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12C991F18248600FDB4DF /* cartoon archer release.png */; };
+		8FB12C9D1F18248600FDB4DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12C9B1F18248600FDB4DF /* LaunchScreen.storyboard */; };
+		8FB12CA81F18248600FDB4DF /* Archer_InvasionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12CA71F18248600FDB4DF /* Archer_InvasionTests.swift */; };
+		8FB12CB31F18248600FDB4DF /* Archer_InvasionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12CB21F18248600FDB4DF /* Archer_InvasionUITests.swift */; };
+		8FB12CC11F18257000FDB4DF /* CGFloatRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12CC01F18257000FDB4DF /* CGFloatRandom.swift */; };
+		8FB12CC31F1825A600FDB4DF /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12CC21F1825A600FDB4DF /* MSButtonNode.swift */; };
+		8FB12CC51F1825EC00FDB4DF /* Level_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CC41F1825EC00FDB4DF /* Level_1.sks */; };
+		8FB12CC71F1825FC00FDB4DF /* hero.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CC61F1825FC00FDB4DF /* hero.sks */; };
+		8FB12CC91F18261300FDB4DF /* doc.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CC81F18261300FDB4DF /* doc.png */; };
+		8FB12CCB1F18261800FDB4DF /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CCA1F18261800FDB4DF /* apple.png */; };
+		8FB12CCE1F18263200FDB4DF /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CCC1F18263200FDB4DF /* MainMenu.sks */; };
+		8FB12CCF1F18263200FDB4DF /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12CCD1F18263200FDB4DF /* MainMenu.swift */; };
+		8FB12CD11F18269400FDB4DF /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CD01F18269400FDB4DF /* Obstacle.sks */; };
+		8FB12CD31F1828A400FDB4DF /* archer.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CD21F1828A400FDB4DF /* archer.sks */; };
+		8FB12CD51F183DBA00FDB4DF /* archer shoot.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CD41F183DBA00FDB4DF /* archer shoot.sks */; };
+		8FB12CD71F183E0000FDB4DF /* shoot.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CD61F183E0000FDB4DF /* shoot.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FB12CA41F18248600FDB4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB12C811F18248600FDB4DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB12C881F18248600FDB4DF;
+			remoteInfo = "Archer Invasion";
+		};
+		8FB12CAF1F18248600FDB4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB12C811F18248600FDB4DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB12C881F18248600FDB4DF;
+			remoteInfo = "Archer Invasion";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F351E9A1F2121A800782C8F /* Level_2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_2.sks; sourceTree = "<group>"; };
+		8F351E9C1F214B0A00782C8F /* Level_3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_3.sks; sourceTree = "<group>"; };
+		8F6C48111F1FBDE3003C5521 /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
+		8F6C48131F1FBF93003C5521 /* particles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = particles.sks; sourceTree = "<group>"; };
+		8F6C48191F1FFE42003C5521 /* earth-background-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-background-2.jpg"; sourceTree = "<group>"; };
+		8F6C481B1F1FFFF4003C5521 /* Earth-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Earth-background.jpg"; sourceTree = "<group>"; };
+		8F6E53E51F1E725100DE75DA /* alienShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alienShip.png; sourceTree = "<group>"; };
+		8F6E53E71F1E7A3200DE75DA /* cannonFire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cannonFire.png; sourceTree = "<group>"; };
+		8F6E53E81F1E7A3200DE75DA /* cannon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cannon.png; sourceTree = "<group>"; };
+		8F6E53EB1F1E8D9F00DE75DA /* object.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = object.sks; sourceTree = "<group>"; };
+		8FB12C891F18248600FDB4DF /* Archer Invasion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Archer Invasion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB12C8C1F18248600FDB4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FB12C901F18248600FDB4DF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		8FB12C921F18248600FDB4DF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		8FB12C941F18248600FDB4DF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8FB12C971F18248600FDB4DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FB12C991F18248600FDB4DF /* cartoon archer release.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cartoon archer release.png"; path = "Assets.xcassets/cartoon archer.imageset/cartoon archer release.png"; sourceTree = "<group>"; };
+		8FB12C9C1F18248600FDB4DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FB12C9E1F18248600FDB4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB12CA31F18248600FDB4DF /* Archer InvasionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Archer InvasionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB12CA71F18248600FDB4DF /* Archer_InvasionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archer_InvasionTests.swift; sourceTree = "<group>"; };
+		8FB12CA91F18248600FDB4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB12CAE1F18248600FDB4DF /* Archer InvasionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Archer InvasionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB12CB21F18248600FDB4DF /* Archer_InvasionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archer_InvasionUITests.swift; sourceTree = "<group>"; };
+		8FB12CB41F18248600FDB4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB12CC01F18257000FDB4DF /* CGFloatRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatRandom.swift; sourceTree = "<group>"; };
+		8FB12CC21F1825A600FDB4DF /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		8FB12CC41F1825EC00FDB4DF /* Level_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_1.sks; sourceTree = "<group>"; };
+		8FB12CC61F1825FC00FDB4DF /* hero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hero.sks; sourceTree = "<group>"; };
+		8FB12CC81F18261300FDB4DF /* doc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc.png; sourceTree = "<group>"; };
+		8FB12CCA1F18261800FDB4DF /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		8FB12CCC1F18263200FDB4DF /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		8FB12CCD1F18263200FDB4DF /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		8FB12CD01F18269400FDB4DF /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
+		8FB12CD21F1828A400FDB4DF /* archer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = archer.sks; sourceTree = "<group>"; };
+		8FB12CD41F183DBA00FDB4DF /* archer shoot.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "archer shoot.sks"; sourceTree = "<group>"; };
+		8FB12CD61F183E0000FDB4DF /* shoot.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = shoot.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FB12C861F18248600FDB4DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB12CA01F18248600FDB4DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB12CAB1F18248600FDB4DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FB12C801F18248600FDB4DF = {
+			isa = PBXGroup;
+			children = (
+				8FB12CD61F183E0000FDB4DF /* shoot.sks */,
+				8FB12C8B1F18248600FDB4DF /* Archer Invasion */,
+				8FB12CA61F18248600FDB4DF /* Archer InvasionTests */,
+				8FB12CB11F18248600FDB4DF /* Archer InvasionUITests */,
+				8FB12C8A1F18248600FDB4DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FB12C8A1F18248600FDB4DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FB12C891F18248600FDB4DF /* Archer Invasion.app */,
+				8FB12CA31F18248600FDB4DF /* Archer InvasionTests.xctest */,
+				8FB12CAE1F18248600FDB4DF /* Archer InvasionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FB12C8B1F18248600FDB4DF /* Archer Invasion */ = {
+			isa = PBXGroup;
+			children = (
+				8FB12C8C1F18248600FDB4DF /* AppDelegate.swift */,
+				8FB12C901F18248600FDB4DF /* Actions.sks */,
+				8FB12C921F18248600FDB4DF /* GameScene.swift */,
+				8F6E53EB1F1E8D9F00DE75DA /* object.sks */,
+				8FB12CD41F183DBA00FDB4DF /* archer shoot.sks */,
+				8FB12CC41F1825EC00FDB4DF /* Level_1.sks */,
+				8F351E9A1F2121A800782C8F /* Level_2.sks */,
+				8F351E9C1F214B0A00782C8F /* Level_3.sks */,
+				8FB12CC21F1825A600FDB4DF /* MSButtonNode.swift */,
+				8FB12CC01F18257000FDB4DF /* CGFloatRandom.swift */,
+				8FB12C941F18248600FDB4DF /* GameViewController.swift */,
+				8FB12CD01F18269400FDB4DF /* Obstacle.sks */,
+				8FB12CCC1F18263200FDB4DF /* MainMenu.sks */,
+				8F6C48191F1FFE42003C5521 /* earth-background-2.jpg */,
+				8F6C481B1F1FFFF4003C5521 /* Earth-background.jpg */,
+				8F6C48131F1FBF93003C5521 /* particles.sks */,
+				8FB12CCD1F18263200FDB4DF /* MainMenu.swift */,
+				8FB12CC61F1825FC00FDB4DF /* hero.sks */,
+				8FB12CC81F18261300FDB4DF /* doc.png */,
+				8FB12CCA1F18261800FDB4DF /* apple.png */,
+				8FB12C961F18248600FDB4DF /* Main.storyboard */,
+				8FB12C991F18248600FDB4DF /* cartoon archer release.png */,
+				8F6E53E51F1E725100DE75DA /* alienShip.png */,
+				8FB12CD21F1828A400FDB4DF /* archer.sks */,
+				8FB12C9B1F18248600FDB4DF /* LaunchScreen.storyboard */,
+				8F6E53E71F1E7A3200DE75DA /* cannonFire.png */,
+				8F6E53E81F1E7A3200DE75DA /* cannon.png */,
+				8FB12C9E1F18248600FDB4DF /* Info.plist */,
+				8F6C48111F1FBDE3003C5521 /* explosion.png */,
+			);
+			path = "Archer Invasion";
+			sourceTree = "<group>";
+		};
+		8FB12CA61F18248600FDB4DF /* Archer InvasionTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FB12CA71F18248600FDB4DF /* Archer_InvasionTests.swift */,
+				8FB12CA91F18248600FDB4DF /* Info.plist */,
+			);
+			path = "Archer InvasionTests";
+			sourceTree = "<group>";
+		};
+		8FB12CB11F18248600FDB4DF /* Archer InvasionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FB12CB21F18248600FDB4DF /* Archer_InvasionUITests.swift */,
+				8FB12CB41F18248600FDB4DF /* Info.plist */,
+			);
+			path = "Archer InvasionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FB12C881F18248600FDB4DF /* Archer Invasion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB12CB71F18248600FDB4DF /* Build configuration list for PBXNativeTarget "Archer Invasion" */;
+			buildPhases = (
+				8FB12C851F18248600FDB4DF /* Sources */,
+				8FB12C861F18248600FDB4DF /* Frameworks */,
+				8FB12C871F18248600FDB4DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Archer Invasion";
+			productName = "Archer Invasion";
+			productReference = 8FB12C891F18248600FDB4DF /* Archer Invasion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FB12CA21F18248600FDB4DF /* Archer InvasionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB12CBA1F18248600FDB4DF /* Build configuration list for PBXNativeTarget "Archer InvasionTests" */;
+			buildPhases = (
+				8FB12C9F1F18248600FDB4DF /* Sources */,
+				8FB12CA01F18248600FDB4DF /* Frameworks */,
+				8FB12CA11F18248600FDB4DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB12CA51F18248600FDB4DF /* PBXTargetDependency */,
+			);
+			name = "Archer InvasionTests";
+			productName = "Archer InvasionTests";
+			productReference = 8FB12CA31F18248600FDB4DF /* Archer InvasionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FB12CAD1F18248600FDB4DF /* Archer InvasionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB12CBD1F18248600FDB4DF /* Build configuration list for PBXNativeTarget "Archer InvasionUITests" */;
+			buildPhases = (
+				8FB12CAA1F18248600FDB4DF /* Sources */,
+				8FB12CAB1F18248600FDB4DF /* Frameworks */,
+				8FB12CAC1F18248600FDB4DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB12CB01F18248600FDB4DF /* PBXTargetDependency */,
+			);
+			name = "Archer InvasionUITests";
+			productName = "Archer InvasionUITests";
+			productReference = 8FB12CAE1F18248600FDB4DF /* Archer InvasionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FB12C811F18248600FDB4DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Max Blackwell";
+				TargetAttributes = {
+					8FB12C881F18248600FDB4DF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7B2963LG49;
+						ProvisioningStyle = Automatic;
+					};
+					8FB12CA21F18248600FDB4DF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7B2963LG49;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FB12C881F18248600FDB4DF;
+					};
+					8FB12CAD1F18248600FDB4DF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7B2963LG49;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FB12C881F18248600FDB4DF;
+					};
+				};
+			};
+			buildConfigurationList = 8FB12C841F18248600FDB4DF /* Build configuration list for PBXProject "Archer Invasion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FB12C801F18248600FDB4DF;
+			productRefGroup = 8FB12C8A1F18248600FDB4DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FB12C881F18248600FDB4DF /* Archer Invasion */,
+				8FB12CA21F18248600FDB4DF /* Archer InvasionTests */,
+				8FB12CAD1F18248600FDB4DF /* Archer InvasionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FB12C871F18248600FDB4DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6E53EC1F1E8D9F00DE75DA /* object.sks in Resources */,
+				8F6E53E91F1E7A3200DE75DA /* cannonFire.png in Resources */,
+				8F351E9D1F214B0A00782C8F /* Level_3.sks in Resources */,
+				8FB12CD71F183E0000FDB4DF /* shoot.sks in Resources */,
+				8F6C48121F1FBDE3003C5521 /* explosion.png in Resources */,
+				8F6C481C1F1FFFF4003C5521 /* Earth-background.jpg in Resources */,
+				8FB12CC91F18261300FDB4DF /* doc.png in Resources */,
+				8F6C481A1F1FFE42003C5521 /* earth-background-2.jpg in Resources */,
+				8F6C48141F1FBF93003C5521 /* particles.sks in Resources */,
+				8FB12CD51F183DBA00FDB4DF /* archer shoot.sks in Resources */,
+				8FB12CC51F1825EC00FDB4DF /* Level_1.sks in Resources */,
+				8FB12C981F18248600FDB4DF /* Main.storyboard in Resources */,
+				8FB12CCE1F18263200FDB4DF /* MainMenu.sks in Resources */,
+				8FB12CD11F18269400FDB4DF /* Obstacle.sks in Resources */,
+				8F6E53E61F1E725100DE75DA /* alienShip.png in Resources */,
+				8FB12CCB1F18261800FDB4DF /* apple.png in Resources */,
+				8F6E53EA1F1E7A3200DE75DA /* cannon.png in Resources */,
+				8FB12C9A1F18248600FDB4DF /* cartoon archer release.png in Resources */,
+				8FB12C9D1F18248600FDB4DF /* LaunchScreen.storyboard in Resources */,
+				8FB12C911F18248600FDB4DF /* Actions.sks in Resources */,
+				8FB12CD31F1828A400FDB4DF /* archer.sks in Resources */,
+				8FB12CC71F1825FC00FDB4DF /* hero.sks in Resources */,
+				8F351E9B1F2121A800782C8F /* Level_2.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB12CA11F18248600FDB4DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB12CAC1F18248600FDB4DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FB12C851F18248600FDB4DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB12C931F18248600FDB4DF /* GameScene.swift in Sources */,
+				8FB12CCF1F18263200FDB4DF /* MainMenu.swift in Sources */,
+				8FB12C951F18248600FDB4DF /* GameViewController.swift in Sources */,
+				8FB12C8D1F18248600FDB4DF /* AppDelegate.swift in Sources */,
+				8FB12CC11F18257000FDB4DF /* CGFloatRandom.swift in Sources */,
+				8FB12CC31F1825A600FDB4DF /* MSButtonNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB12C9F1F18248600FDB4DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB12CA81F18248600FDB4DF /* Archer_InvasionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB12CAA1F18248600FDB4DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB12CB31F18248600FDB4DF /* Archer_InvasionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FB12CA51F18248600FDB4DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB12C881F18248600FDB4DF /* Archer Invasion */;
+			targetProxy = 8FB12CA41F18248600FDB4DF /* PBXContainerItemProxy */;
+		};
+		8FB12CB01F18248600FDB4DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB12C881F18248600FDB4DF /* Archer Invasion */;
+			targetProxy = 8FB12CAF1F18248600FDB4DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FB12C961F18248600FDB4DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB12C971F18248600FDB4DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FB12C9B1F18248600FDB4DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB12C9C1F18248600FDB4DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FB12CB51F18248600FDB4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FB12CB61F18248600FDB4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FB12CB81F18248600FDB4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7B2963LG49;
+				INFOPLIST_FILE = "Archer Invasion/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-Invasion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8FB12CB91F18248600FDB4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7B2963LG49;
+				INFOPLIST_FILE = "Archer Invasion/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-Invasion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8FB12CBB1F18248600FDB4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7B2963LG49;
+				INFOPLIST_FILE = "Archer InvasionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-InvasionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Archer Invasion.app/Archer Invasion";
+			};
+			name = Debug;
+		};
+		8FB12CBC1F18248600FDB4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7B2963LG49;
+				INFOPLIST_FILE = "Archer InvasionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-InvasionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Archer Invasion.app/Archer Invasion";
+			};
+			name = Release;
+		};
+		8FB12CBE1F18248600FDB4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7B2963LG49;
+				INFOPLIST_FILE = "Archer InvasionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-InvasionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Archer Invasion";
+			};
+			name = Debug;
+		};
+		8FB12CBF1F18248600FDB4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7B2963LG49;
+				INFOPLIST_FILE = "Archer InvasionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-InvasionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Archer Invasion";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FB12C841F18248600FDB4DF /* Build configuration list for PBXProject "Archer Invasion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB12CB51F18248600FDB4DF /* Debug */,
+				8FB12CB61F18248600FDB4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB12CB71F18248600FDB4DF /* Build configuration list for PBXNativeTarget "Archer Invasion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB12CB81F18248600FDB4DF /* Debug */,
+				8FB12CB91F18248600FDB4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB12CBA1F18248600FDB4DF /* Build configuration list for PBXNativeTarget "Archer InvasionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB12CBB1F18248600FDB4DF /* Debug */,
+				8FB12CBC1F18248600FDB4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB12CBD1F18248600FDB4DF /* Build configuration list for PBXNativeTarget "Archer InvasionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB12CBE1F18248600FDB4DF /* Debug */,
+				8FB12CBF1F18248600FDB4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FB12C811F18248600FDB4DF /* Project object */;
+}
