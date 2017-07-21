@@ -2,8 +2,7 @@ import SpriteKit
 import AVFoundation
 import UIKit
 
-var currentScene = 1
-class GameScene: SKScene, SKPhysicsContactDelegate
+class Level_4: SKScene, SKPhysicsContactDelegate
 {
     var obstacleSource: SKNode!
     var buttonRestart: MSButtonNode!
@@ -27,7 +26,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     var possibleToLose = true
     var found = false
     var origin: SKSpriteNode!
-//    class func rotate(byAngle radians: CGFloat,duration: TimeInterval) -> SKAction
+    //    class func rotate(byAngle radians: CGFloat,duration: TimeInterval) -> SKAction
     var ammo: SKLabelNode!
     var archerSwitch: CFTimeInterval = 0.0
     var numOfLives = 0
@@ -44,12 +43,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     var ableToShoot = true
     var node: SKNode!
     var currentLevel = currentScene
-
+    
     override func didMove(to view: SKView)
     {
         /* Setup your scene here */
-        currentScene = 1
-        currentLevel = 1
+        currentLevel = 4
+        currentScene = 4
         nextLevelButton = childNode(withName: "nextLevelButton") as! MSButtonNode
         nextLevelButton.isHidden = true
         alienParent = self.childNode(withName: "alienParent")
@@ -78,31 +77,31 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         physicsWorld.contactDelegate = self
         
         buttonRestart.selectedHandler =
-        {
-            let skView = self.view as SKView!
-            
-            let scene = GameScene.level(self.currentLevel) as GameScene!
-            
-            scene?.scaleMode = .aspectFill
-            
-            skView?.presentScene(scene)
+            {
+                let skView = self.view as SKView!
+                
+                let scene = GameScene.level(self.currentLevel) as GameScene!
+                
+                scene?.scaleMode = .aspectFill
+                
+                skView?.presentScene(scene)
         }
         
         buttonRestart.state = .MSButtonNodeStateHidden
         
         nextLevelButton.selectedHandler =
-        {
-            currentScene += 1
-            guard let scene = GameScene.level(currentScene) else
             {
-                print("Level \(self.currentLevel+1) is missing?")
-                return
-            }
-            
-            scene.scaleMode = .aspectFit
-            view.presentScene(scene)
-            
-            
+                currentScene += 1
+                guard let scene = GameScene.level(currentScene) else
+                {
+                    print("Level \(self.currentLevel+1) is missing?")
+                    return
+                }
+                
+                scene.scaleMode = .aspectFit
+                view.presentScene(scene)
+                
+                
         }
         nextLevelButton.state = .MSButtonNodeStateHidden
     }
@@ -137,21 +136,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                     dx /= hold
                     dy /= hold
                 }
-                
+                    
                 else if dy > 600
                 {
                     let hold = dy / 600
                     dy /= hold
                     dx /= hold
                 }
-                
+                    
                 else if dx < 600
                 {
                     let hold = 600 / dx
                     dx *= hold
                     dy *= hold
                 }
-                
+                    
                 else if dy < 600
                 {
                     let hold = 600 / dy
@@ -258,11 +257,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         let contactB = contact.bodyB
         let action = SKAction.removeFromParent()
         
-    
+        
         /* Get references to the physics body parent nodes */
         let nodeA = contactA.node!
         let nodeB = contactB.node!
-
+        
         /* Did our hero pass through the 'goal'? */
         if nodeA.name == "goal"
         {
@@ -276,18 +275,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             nodeB.physicsBody?.velocity = velocity
         }
         
-         if nodeA.name == "wall"
-         {
+        if nodeA.name == "wall"
+        {
             bounces += 1
-         }
+        }
         
-         if nodeB.name == "wall"
-         {
+        if nodeB.name == "wall"
+        {
             bounces += 1
-         }
-         if nodeB.name == "goal"
-         {
-
+        }
+        if nodeB.name == "goal"
+        {
+            
             let newExplosion = explosion.copy() as! SKSpriteNode
             
             newExplosion.position = nodeB.convert(nodeB.position, to: self)
@@ -297,11 +296,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             nodeB.run(action)
             numOfAliens -= 1
             nodeA.physicsBody?.velocity = velocity
-         }
-    
+        }
+        
         if gameState != .active {return}
     }
-
+    
     
     class func level(_ levelNumber: Int) -> GameScene?
     {
@@ -332,19 +331,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     
     func rotateCanon(_ touches: Set<UITouch>)
     {
-       
-    
+        
+        
         let touch = touches.first!
         let location = touch.location(in: self)
         
         let x = abs(location.x - origin.position.x)
         let y = abs(location.y - origin.position.y)
         
-//        origin.zRotation = CGFloat(atan(y/x))
+        //        origin.zRotation = CGFloat(atan(y/x))
         origin.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
-//        origin.zRotation -= 90
+        //        origin.zRotation -= 90
         shoot.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
-//        shoot.zRotation += 90
+        //        shoot.zRotation += 90
         print("rotated")
         
     }

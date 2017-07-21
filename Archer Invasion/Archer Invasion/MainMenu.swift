@@ -44,7 +44,7 @@ class MainMenu: SKScene
         }
         
         //2) load game scene
-        guard let scene = GameScene.level(1) else
+        guard let scene = LevelSelect(fileNamed: "LevelSelect") else
         {
             print("Could not make game scene, check the name is spelled correctly")
             return
