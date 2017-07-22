@@ -22,7 +22,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     var scrollLayer: SKNode!
     var sinceTouch : CFTimeInterval = 0
     var spawnTimer: CFTimeInterval = 0
-    let fixedDelta : CFTimeInterval = 1.0 / 50
+    let fixedDelta : CFTimeInterval = 1.0 / 30
     var gameState: GameSceneState = .active
     var possibleToLose = true
     var found = false
@@ -43,14 +43,43 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     var backGroundMusic: SKAudioNode!
     var ableToShoot = true
     var node: SKNode!
+    var back: MSButtonNode!
     var currentLevel = currentScene
 
     override func didMove(to view: SKView)
     {
+        
         /* Setup your scene here */
         currentScene = 1
         currentLevel = 1
         nextLevelButton = childNode(withName: "nextLevelButton") as! MSButtonNode
+        back = self.childNode(withName: "back") as! MSButtonNode
+        back.selectedHandler =
+        {
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = LevelSelect(fileNamed: "LevelSelect") else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+        }
         nextLevelButton.isHidden = true
         alienParent = self.childNode(withName: "alienParent")
         explosion = self.childNode(withName: "explosion") as! SKSpriteNode
@@ -179,7 +208,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             velocity = newHeroReference.physicsBody?.velocity
         }
         //check and cap vertical velocity
-        if bounces == 5
+        if bounces >= 5
         {
             for child in (scene?.children)!
             {

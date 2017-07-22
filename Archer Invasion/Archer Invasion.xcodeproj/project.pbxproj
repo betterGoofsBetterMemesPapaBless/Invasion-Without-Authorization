@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F346BA61F22CA0900CEA0B4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BA51F22CA0900CEA0B4 /* GoogleMobileAds.framework */; };
+		8F346BA91F22CA2600CEA0B4 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BA71F22CA2600CEA0B4 /* EventKit.framework */; };
+		8F346BAA1F22CA2600CEA0B4 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BA81F22CA2600CEA0B4 /* EventKitUI.framework */; };
+		8F346BAC1F22CA3400CEA0B4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BAB1F22CA3400CEA0B4 /* AVFoundation.framework */; };
+		8F346BAE1F22CA3E00CEA0B4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BAD1F22CA3E00CEA0B4 /* AdSupport.framework */; };
+		8F346BB01F22CA4B00CEA0B4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BAF1F22CA4B00CEA0B4 /* AudioToolbox.framework */; };
+		8F346BB21F22CA5B00CEA0B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BB11F22CA5B00CEA0B4 /* CoreGraphics.framework */; };
+		8F346BB41F22CA6500CEA0B4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BB31F22CA6500CEA0B4 /* CoreTelephony.framework */; };
+		8F346BB61F22CA7000CEA0B4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BB51F22CA7000CEA0B4 /* CoreMedia.framework */; };
+		8F346BB81F22CA7B00CEA0B4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BB71F22CA7B00CEA0B4 /* MessageUI.framework */; };
+		8F346BBA1F22CA8200CEA0B4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BB91F22CA8200CEA0B4 /* StoreKit.framework */; };
+		8F346BBC1F22CA8B00CEA0B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BBB1F22CA8B00CEA0B4 /* SystemConfiguration.framework */; };
 		8F351E9B1F2121A800782C8F /* Level_2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F351E9A1F2121A800782C8F /* Level_2.sks */; };
 		8F351E9D1F214B0A00782C8F /* Level_3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F351E9C1F214B0A00782C8F /* Level_3.sks */; };
 		8F6C48121F1FBDE3003C5521 /* explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C48111F1FBDE3003C5521 /* explosion.png */; };
@@ -54,6 +66,11 @@
 		8FF75A4C1F227FF00092AD17 /* Level_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF75A4B1F227FF00092AD17 /* Level_2.swift */; };
 		8FF75A4E1F2280310092AD17 /* Level_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF75A4D1F2280310092AD17 /* Level_3.swift */; };
 		8FF75A511F2280590092AD17 /* Level_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF75A501F2280590092AD17 /* Level_4.swift */; };
+		8FF75A541F2282060092AD17 /* button_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF75A531F2282060092AD17 /* button_back.png */; };
+		8FF75A571F2283770092AD17 /* Level_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF75A561F2283770092AD17 /* Level_6.swift */; };
+		8FF75A591F22839C0092AD17 /* Level_6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FF75A581F22839C0092AD17 /* Level_6.sks */; };
+		8FF75A5B1F2283CA0092AD17 /* button_level_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF75A5A1F2283CA0092AD17 /* button_level_6.png */; };
+		8FF75A611F22C5840092AD17 /* alienShip2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF75A601F22C5840092AD17 /* alienShip2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +91,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F346BA51F22CA0900CEA0B4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		8F346BA71F22CA2600CEA0B4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		8F346BA81F22CA2600CEA0B4 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		8F346BAB1F22CA3400CEA0B4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8F346BAD1F22CA3E00CEA0B4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		8F346BAF1F22CA4B00CEA0B4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8F346BB11F22CA5B00CEA0B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F346BB31F22CA6500CEA0B4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8F346BB51F22CA7000CEA0B4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8F346BB71F22CA7B00CEA0B4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8F346BB91F22CA8200CEA0B4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8F346BBB1F22CA8B00CEA0B4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8F351E9A1F2121A800782C8F /* Level_2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_2.sks; sourceTree = "<group>"; };
 		8F351E9C1F214B0A00782C8F /* Level_3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_3.sks; sourceTree = "<group>"; };
 		8F6C48111F1FBDE3003C5521 /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
@@ -127,6 +156,12 @@
 		8FF75A4B1F227FF00092AD17 /* Level_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level_2.swift; path = ../Level_2.swift; sourceTree = "<group>"; };
 		8FF75A4D1F2280310092AD17 /* Level_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_3.swift; sourceTree = "<group>"; };
 		8FF75A501F2280590092AD17 /* Level_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level_4.swift; path = ../Level_4.swift; sourceTree = "<group>"; };
+		8FF75A531F2282060092AD17 /* button_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_back.png; sourceTree = "<group>"; };
+		8FF75A561F2283770092AD17 /* Level_6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level_6.swift; path = ../Level_6.swift; sourceTree = "<group>"; };
+		8FF75A581F22839C0092AD17 /* Level_6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_6.sks; sourceTree = "<group>"; };
+		8FF75A5A1F2283CA0092AD17 /* button_level_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_level_6.png; sourceTree = "<group>"; };
+		8FF75A5C1F22A9A90092AD17 /* Archer Invasion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Archer Invasion-Bridging-Header.h"; sourceTree = "<group>"; };
+		8FF75A601F22C5840092AD17 /* alienShip2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alienShip2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +169,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F346BBC1F22CA8B00CEA0B4 /* SystemConfiguration.framework in Frameworks */,
+				8F346BBA1F22CA8200CEA0B4 /* StoreKit.framework in Frameworks */,
+				8F346BB81F22CA7B00CEA0B4 /* MessageUI.framework in Frameworks */,
+				8F346BB61F22CA7000CEA0B4 /* CoreMedia.framework in Frameworks */,
+				8F346BB41F22CA6500CEA0B4 /* CoreTelephony.framework in Frameworks */,
+				8F346BB21F22CA5B00CEA0B4 /* CoreGraphics.framework in Frameworks */,
+				8F346BB01F22CA4B00CEA0B4 /* AudioToolbox.framework in Frameworks */,
+				8F346BAE1F22CA3E00CEA0B4 /* AdSupport.framework in Frameworks */,
+				8F346BAC1F22CA3400CEA0B4 /* AVFoundation.framework in Frameworks */,
+				8F346BA91F22CA2600CEA0B4 /* EventKit.framework in Frameworks */,
+				8F346BAA1F22CA2600CEA0B4 /* EventKitUI.framework in Frameworks */,
+				8F346BA61F22CA0900CEA0B4 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +201,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F346BA41F22CA0900CEA0B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F346BBB1F22CA8B00CEA0B4 /* SystemConfiguration.framework */,
+				8F346BB91F22CA8200CEA0B4 /* StoreKit.framework */,
+				8F346BB71F22CA7B00CEA0B4 /* MessageUI.framework */,
+				8F346BB51F22CA7000CEA0B4 /* CoreMedia.framework */,
+				8F346BB31F22CA6500CEA0B4 /* CoreTelephony.framework */,
+				8F346BB11F22CA5B00CEA0B4 /* CoreGraphics.framework */,
+				8F346BAF1F22CA4B00CEA0B4 /* AudioToolbox.framework */,
+				8F346BAD1F22CA3E00CEA0B4 /* AdSupport.framework */,
+				8F346BAB1F22CA3400CEA0B4 /* AVFoundation.framework */,
+				8F346BA71F22CA2600CEA0B4 /* EventKit.framework */,
+				8F346BA81F22CA2600CEA0B4 /* EventKitUI.framework */,
+				8F346BA51F22CA0900CEA0B4 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FB12C801F18248600FDB4DF = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +228,7 @@
 				8FB12CA61F18248600FDB4DF /* Archer InvasionTests */,
 				8FB12CB11F18248600FDB4DF /* Archer InvasionUITests */,
 				8FB12C8A1F18248600FDB4DF /* Products */,
+				8F346BA41F22CA0900CEA0B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +252,7 @@
 				8FF75A4F1F2280460092AD17 /* Level 3 */,
 				8FF75A521F2280710092AD17 /* Level_4 */,
 				8FF75A481F227F960092AD17 /* Level 5 */,
+				8FF75A551F2283590092AD17 /* Level 6 */,
 				8FB12C901F18248600FDB4DF /* Actions.sks */,
 				8F6E53EB1F1E8D9F00DE75DA /* object.sks */,
 				8FB12CD41F183DBA00FDB4DF /* archer shoot.sks */,
@@ -204,6 +272,7 @@
 				8FB12C9E1F18248600FDB4DF /* Info.plist */,
 				8F7E24661F216BAC00EEF091 /* cannon.png */,
 				8F6C48111F1FBDE3003C5521 /* explosion.png */,
+				8FF75A5C1F22A9A90092AD17 /* Archer Invasion-Bridging-Header.h */,
 			);
 			path = "Archer Invasion";
 			sourceTree = "<group>";
@@ -229,6 +298,9 @@
 		8FD8D1011F215FB200A5FC9F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8FF75A601F22C5840092AD17 /* alienShip2.png */,
+				8FF75A5A1F2283CA0092AD17 /* button_level_6.png */,
+				8FF75A531F2282060092AD17 /* button_back.png */,
 				8FF75A3C1F225DE00092AD17 /* button_play.png */,
 				8F6C48191F1FFE42003C5521 /* earth-background-2.jpg */,
 				8F6C481B1F1FFFF4003C5521 /* Earth-background.jpg */,
@@ -291,6 +363,15 @@
 				8FF75A421F2269FC0092AD17 /* Level_4.sks */,
 			);
 			name = Level_4;
+			sourceTree = "<group>";
+		};
+		8FF75A551F2283590092AD17 /* Level 6 */ = {
+			isa = PBXGroup;
+			children = (
+				8FF75A561F2283770092AD17 /* Level_6.swift */,
+				8FF75A581F22839C0092AD17 /* Level_6.sks */,
+			);
+			name = "Level 6";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +443,7 @@
 					8FB12C881F18248600FDB4DF = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 7B2963LG49;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					8FB12CA21F18248600FDB4DF = {
@@ -406,12 +488,14 @@
 				8FD8D1091F215FEF00A5FC9F /* button_level_2.png in Resources */,
 				8F6E53EC1F1E8D9F00DE75DA /* object.sks in Resources */,
 				8F351E9D1F214B0A00782C8F /* Level_3.sks in Resources */,
+				8FF75A591F22839C0092AD17 /* Level_6.sks in Resources */,
 				8FF75A3F1F2265E00092AD17 /* button_next-level.png in Resources */,
 				8FB12CD71F183E0000FDB4DF /* shoot.sks in Resources */,
 				8FF75A411F22670A0092AD17 /* button_restart.png in Resources */,
 				8FF75A431F2269FC0092AD17 /* Level_4.sks in Resources */,
 				8F6C48121F1FBDE3003C5521 /* explosion.png in Resources */,
 				8F6C481C1F1FFFF4003C5521 /* Earth-background.jpg in Resources */,
+				8FF75A5B1F2283CA0092AD17 /* button_level_6.png in Resources */,
 				8FB12CC91F18261300FDB4DF /* doc.png in Resources */,
 				8FD8D1071F215FEF00A5FC9F /* button_level_5.png in Resources */,
 				8F6C481A1F1FFE42003C5521 /* earth-background-2.jpg in Resources */,
@@ -423,6 +507,7 @@
 				8F7E24671F216BAC00EEF091 /* cannon.png in Resources */,
 				8FB12C981F18248600FDB4DF /* Main.storyboard in Resources */,
 				8FF75A3D1F225DE00092AD17 /* button_play.png in Resources */,
+				8FF75A611F22C5840092AD17 /* alienShip2.png in Resources */,
 				8FB12CCE1F18263200FDB4DF /* MainMenu.sks in Resources */,
 				8FB12CD11F18269400FDB4DF /* Obstacle.sks in Resources */,
 				8F7E24691F216BBD00EEF091 /* cannonFire.png in Resources */,
@@ -431,6 +516,7 @@
 				8FB12CCB1F18261800FDB4DF /* apple.png in Resources */,
 				8FB12C9A1F18248600FDB4DF /* cartoon archer release.png in Resources */,
 				8FB12C9D1F18248600FDB4DF /* LaunchScreen.storyboard in Resources */,
+				8FF75A541F2282060092AD17 /* button_back.png in Resources */,
 				8FB12C911F18248600FDB4DF /* Actions.sks in Resources */,
 				8FD8D10D1F21603000A5FC9F /* button_level_4.png in Resources */,
 				8FB12CD31F1828A400FDB4DF /* archer.sks in Resources */,
@@ -466,6 +552,7 @@
 				8FB12CCF1F18263200FDB4DF /* MainMenu.swift in Sources */,
 				8FD8D1001F215EFF00A5FC9F /* LevelSelect.swift in Sources */,
 				8FB12C951F18248600FDB4DF /* GameViewController.swift in Sources */,
+				8FF75A571F2283770092AD17 /* Level_6.swift in Sources */,
 				8FF75A471F226C9F0092AD17 /* Level_5.swift in Sources */,
 				8FB12C8D1F18248600FDB4DF /* AppDelegate.swift in Sources */,
 				8FB12CC11F18257000FDB4DF /* CGFloatRandom.swift in Sources */,
@@ -625,11 +712,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7B2963LG49;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Archer Invasion/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-Invasion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Archer Invasion/Archer Invasion-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -638,11 +733,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7B2963LG49;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Archer Invasion/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-Invasion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Archer Invasion/Archer Invasion-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
