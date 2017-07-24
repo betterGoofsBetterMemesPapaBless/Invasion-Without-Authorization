@@ -1,16 +1,17 @@
-//
+
 //  LevelSelect.swift
 //  Archer Invasion
 //
 //  Created by Max Blackwell on 7/20/17.
 //  Copyright © 2017 Max Blackwell. All rights reserved.
-//
 
 import SpriteKit
 import Foundation
-
+import GameplayKit
+import UIKit
 class LevelSelect: SKScene
 {
+    var cameraNode: SKCameraNode!
     var buttonLevel_1: MSButtonNode!
     var buttonLevel_2: MSButtonNode!
     var buttonLevel_3: MSButtonNode!
@@ -23,12 +24,13 @@ class LevelSelect: SKScene
     var buttonLevel_10: MSButtonNode!
     var buttonLevel_11: MSButtonNode!
     var buttonLevel_12: MSButtonNode!
+    var buttonLevel_13: MSButtonNode!
+    var touchBeganLocation: CGPoint!
 
 
     var levelsUnlocked: Int!
     let backgroundImage = SKSpriteNode(imageNamed: "Earth-background.jpg")
 
-    
     override func didMove(to view: SKView)
     {
         addChild(backgroundImage)
@@ -36,6 +38,9 @@ class LevelSelect: SKScene
         backgroundImage.xScale = 0.25
         backgroundImage.yScale = 0.25
         backgroundImage.position = CGPoint(x: 568/2, y: 320/2)
+        cameraNode = self.childNode(withName: "cameraNode") as! SKCameraNode
+        self.camera = cameraNode
+
         buttonLevel_1 = self.childNode(withName: "buttonLevel_1") as! MSButtonNode
         buttonLevel_2 = self.childNode(withName: "buttonLevel_2") as! MSButtonNode
         buttonLevel_3 = self.childNode(withName: "buttonLevel_3") as! MSButtonNode
@@ -48,11 +53,8 @@ class LevelSelect: SKScene
         buttonLevel_10 = self.childNode(withName: "buttonLevel_10") as! MSButtonNode
         buttonLevel_11 = self.childNode(withName: "buttonLevel_11") as! MSButtonNode
         buttonLevel_12 = self.childNode(withName: "buttonLevel_12") as! MSButtonNode
+        buttonLevel_13 = self.childNode(withName: "buttonLevel_13") as! MSButtonNode
 
-
-
-        
-        
         buttonLevel_1.selectedHandler =
         {
             
@@ -274,6 +276,14 @@ class LevelSelect: SKScene
                 
         }
         
+        
+        func touchesBegan(touches: Set<UITouch>, with: UIEvent?)
+        {
+            let location = touches.first!.location(in: self)
+            
+            cameraNode.position.y = location.y
+        }
+        
         buttonLevel_8.selectedHandler =
         {
                 //if levelsUnlocked >= 8
@@ -402,7 +412,7 @@ class LevelSelect: SKScene
                 //}
         }
         buttonLevel_12.selectedHandler =
-            {
+        {
                 //if levelsUnlocked >= 8
                 //{
                 print("Going to level 5")
@@ -432,7 +442,77 @@ class LevelSelect: SKScene
                 skView.presentScene(scene)
                 //}
         }
+        buttonLevel_13.selectedHandler =
+            {
+                //if levelsUnlocked >= 8
+                //{
+                print("Going to level 5")
+                print("Going to level 1")
+                guard let skView = self.view as SKView! else
+                {
+                    print("Could not get Skview")
+                    return
+                }
+                
+                //2) load game scene
+                guard let scene = GameScene.level(13) else
+                {
+                    print("Could not make game scene, check the name is spelled correctly")
+                    return
+                }
+                
+                //3) ensure correct aspect mode
+                scene.scaleMode = .aspectFit
+                
+                //show debug
+                skView.showsPhysics = false
+                skView.showsDrawCount = true
+                skView.showsFPS = true
+                
+                //4) start game scene
+                skView.presentScene(scene)
+                //}
+        }
 
+    }
+    
+    func moveCamera()
+    {
+
+    }
+    
+
+    override func sceneDidLoad()
+    {
+
+        
+        var swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes))
+        swipeUp.direction = UISwipeGestureRecognizerDirection.up
+        self.view?.addGestureRecognizer(swipeUp)
+        
+        var swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes))
+        swipeDown.direction = UISwipeGestureRecognizerDirection.down
+        self.view?.addGestureRecognizer(swipeDown)
+        
+        super.sceneDidLoad()
+    }
+    
+    func handleSwipes(gesture: UISwipeGestureRecognizer)
+    {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer
+        {
+            switch swipeGesture.direction
+            {
+
+            case UISwipeGestureRecognizerDirection.up:
+                cameraNode.run(SKAction.move(by: CGVector(dx: 0, dy: 35), duration: 0.25))
+            case UISwipeGestureRecognizerDirection.down:
+                cameraNode.run(SKAction.move(by: CGVector(dx: 0, dy: -35), duration: 0.25))
+            
+                
+            default: break
+           }
+        }
     }
 
 }

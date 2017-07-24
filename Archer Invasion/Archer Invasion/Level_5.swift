@@ -374,7 +374,6 @@ class Level_5: SKScene, SKPhysicsContactDelegate
         //        origin.zRotation -= 90
         shoot.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
         //        shoot.zRotation += 90
-        print("rotated")
         
     }
 }
