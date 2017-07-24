@@ -34,6 +34,7 @@
 		8F8DF2791F26AD3F00FF8C75 /* Level_13.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F8DF2781F26AD3F00FF8C75 /* Level_13.sks */; };
 		8F8DF27C1F26B25A00FF8C75 /* Level_14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8DF27B1F26B25A00FF8C75 /* Level_14.swift */; };
 		8F8DF27E1F26B27000FF8C75 /* Level_14.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F8DF27D1F26B27000FF8C75 /* Level_14.sks */; };
+		8F8DF2811F26B57D00FF8C75 /* button_level 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F8DF2801F26B57D00FF8C75 /* button_level 14.png */; };
 		8FB12C8D1F18248600FDB4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12C8C1F18248600FDB4DF /* AppDelegate.swift */; };
 		8FB12C911F18248600FDB4DF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12C901F18248600FDB4DF /* Actions.sks */; };
 		8FB12C931F18248600FDB4DF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12C921F18248600FDB4DF /* GameScene.swift */; };
@@ -140,6 +141,7 @@
 		8F8DF2781F26AD3F00FF8C75 /* Level_13.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_13.sks; sourceTree = "<group>"; };
 		8F8DF27B1F26B25A00FF8C75 /* Level_14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_14.swift; sourceTree = SOURCE_ROOT; };
 		8F8DF27D1F26B27000FF8C75 /* Level_14.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_14.sks; sourceTree = "<group>"; };
+		8F8DF2801F26B57D00FF8C75 /* button_level 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 14.png"; path = "../../../../Downloads/button_level 14.png"; sourceTree = "<group>"; };
 		8FB12C891F18248600FDB4DF /* Archer Invasion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Archer Invasion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB12C8C1F18248600FDB4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB12C901F18248600FDB4DF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 		8FD8D1011F215FB200A5FC9F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8F8DF2801F26B57D00FF8C75 /* button_level 14.png */,
 				8F8DF2741F269B7600FF8C75 /* button_level 13.png */,
 				8FD065BE1F26662600154D9B /* button_level 12.png */,
 				8FD065B71F26643700154D9B /* button_level 11.png */,
@@ -639,6 +642,7 @@
 				8FD065A51F26548D00154D9B /* Level_8.sks in Resources */,
 				8FD8D10F1F21606700A5FC9F /* button_level_3.png in Resources */,
 				8F6C48141F1FBF93003C5521 /* particles.sks in Resources */,
+				8F8DF2811F26B57D00FF8C75 /* button_level 14.png in Resources */,
 				8FB12CC51F1825EC00FDB4DF /* Level_1.sks in Resources */,
 				8F7E24671F216BAC00EEF091 /* cannon.png in Resources */,
 				8FD065A11F26500300154D9B /* button_level_7.png in Resources */,

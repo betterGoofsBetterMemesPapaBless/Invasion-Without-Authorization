@@ -25,6 +25,7 @@ class LevelSelect: SKScene
     var buttonLevel_11: MSButtonNode!
     var buttonLevel_12: MSButtonNode!
     var buttonLevel_13: MSButtonNode!
+    var buttonLevel_14: MSButtonNode!
     var touchBeganLocation: CGPoint!
 
 
@@ -54,6 +55,7 @@ class LevelSelect: SKScene
         buttonLevel_11 = self.childNode(withName: "buttonLevel_11") as! MSButtonNode
         buttonLevel_12 = self.childNode(withName: "buttonLevel_12") as! MSButtonNode
         buttonLevel_13 = self.childNode(withName: "buttonLevel_13") as! MSButtonNode
+        buttonLevel_14 = self.childNode(withName: "buttonLevel_14") as! MSButtonNode
 
         buttonLevel_1.selectedHandler =
         {
@@ -473,6 +475,38 @@ class LevelSelect: SKScene
                 skView.presentScene(scene)
                 //}
         }
+        buttonLevel_14.selectedHandler =
+        {
+                //if levelsUnlocked >= 8
+                //{
+                print("Going to level 5")
+                print("Going to level 1")
+                guard let skView = self.view as SKView! else
+                {
+                    print("Could not get Skview")
+                    return
+                }
+                
+                //2) load game scene
+                guard let scene = GameScene.level(14) else
+                {
+                    print("Could not make game scene, check the name is spelled correctly")
+                    return
+                }
+                
+                //3) ensure correct aspect mode
+                scene.scaleMode = .aspectFit
+                
+                //show debug
+                skView.showsPhysics = false
+                skView.showsDrawCount = true
+                skView.showsFPS = true
+                
+                //4) start game scene
+                skView.presentScene(scene)
+                //}
+        }
+
 
     }
     

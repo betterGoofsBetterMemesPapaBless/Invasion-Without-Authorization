@@ -89,7 +89,7 @@ class Level_14: SKScene, SKPhysicsContactDelegate
                 numOfAliens += 1
             }
         }
-        numOfLives = 2
+        numOfLives = 4
         scrollLayer = self.childNode(withName: "//scrollLayer")
         startPoint = self.childNode(withName: "//position") as! SKSpriteNode
         hero = self.childNode(withName: "hero") as! SKSpriteNode
