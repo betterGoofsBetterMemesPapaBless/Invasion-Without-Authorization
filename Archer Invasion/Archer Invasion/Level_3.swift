@@ -26,7 +26,6 @@ class Level_3: SKScene, SKPhysicsContactDelegate
     var possibleToLose = true
     var found = false
     var origin: SKSpriteNode!
-    //    class func rotate(byAngle radians: CGFloat,duration: TimeInterval) -> SKAction
     var ammo: SKLabelNode!
     var archerSwitch: CFTimeInterval = 0.0
     var numOfLives = 0
@@ -106,14 +105,14 @@ class Level_3: SKScene, SKPhysicsContactDelegate
         physicsWorld.contactDelegate = self
         
         buttonRestart.selectedHandler =
-            {
-                let skView = self.view as SKView!
-                
-                let scene = GameScene.level(self.currentLevel) as GameScene!
-                
-                scene?.scaleMode = .aspectFill
-                
-                skView?.presentScene(scene)
+        {
+            let skView = self.view as SKView!
+            
+            let scene = GameScene.level(self.currentLevel) as GameScene!
+            
+            scene?.scaleMode = .aspectFill
+            
+            skView?.presentScene(scene)
         }
         
         buttonRestart.state = .MSButtonNodeStateHidden
@@ -173,16 +172,10 @@ class Level_3: SKScene, SKPhysicsContactDelegate
                     dx /= hold
                 }
                     
-                else if dx < 600
+                else if dy < 600 && dx < 600
                 {
-                    let hold = 600 / dx
-                    dx *= hold
-                    dy *= hold
-                }
-                    
-                else if dy < 600
-                {
-                    let hold = 600 / dy
+                    let sum = abs(dx) + abs(dy)
+                    let hold = 1200 / sum
                     dx *= hold
                     dy *= hold
                 }

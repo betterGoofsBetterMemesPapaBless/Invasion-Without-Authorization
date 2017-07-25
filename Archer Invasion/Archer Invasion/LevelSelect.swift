@@ -1,7 +1,6 @@
-
 //  LevelSelect.swift
 //  Archer Invasion
-//
+
 //  Created by Max Blackwell on 7/20/17.
 //  Copyright © 2017 Max Blackwell. All rights reserved.
 
@@ -26,6 +25,10 @@ class LevelSelect: SKScene
     var buttonLevel_12: MSButtonNode!
     var buttonLevel_13: MSButtonNode!
     var buttonLevel_14: MSButtonNode!
+    var buttonLevel_15: MSButtonNode!
+    var buttonLevel_16: MSButtonNode!
+
+
     var touchBeganLocation: CGPoint!
 
 
@@ -34,14 +37,21 @@ class LevelSelect: SKScene
 
     override func didMove(to view: SKView)
     {
-        addChild(backgroundImage)
+        let swipeUp:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes))
+        swipeUp.direction = UISwipeGestureRecognizerDirection.up
+        view.addGestureRecognizer(swipeUp)
+        
+        let swipeDown:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes))
+        swipeDown.direction = UISwipeGestureRecognizerDirection.down
+        view.addGestureRecognizer(swipeDown)
+      
         backgroundImage.zPosition = -1
         backgroundImage.xScale = 0.25
         backgroundImage.yScale = 0.25
-        backgroundImage.position = CGPoint(x: 568/2, y: 320/2)
+        backgroundImage.position = CGPoint(x: 0, y: 0)
         cameraNode = self.childNode(withName: "cameraNode") as! SKCameraNode
         self.camera = cameraNode
-
+        cameraNode.addChild(backgroundImage)
         buttonLevel_1 = self.childNode(withName: "buttonLevel_1") as! MSButtonNode
         buttonLevel_2 = self.childNode(withName: "buttonLevel_2") as! MSButtonNode
         buttonLevel_3 = self.childNode(withName: "buttonLevel_3") as! MSButtonNode
@@ -56,6 +66,9 @@ class LevelSelect: SKScene
         buttonLevel_12 = self.childNode(withName: "buttonLevel_12") as! MSButtonNode
         buttonLevel_13 = self.childNode(withName: "buttonLevel_13") as! MSButtonNode
         buttonLevel_14 = self.childNode(withName: "buttonLevel_14") as! MSButtonNode
+        buttonLevel_15 = self.childNode(withName: "buttonLevel_15") as! MSButtonNode
+        buttonLevel_16 = self.childNode(withName: "buttonLevel_16") as! MSButtonNode
+
 
         buttonLevel_1.selectedHandler =
         {
@@ -247,306 +260,343 @@ class LevelSelect: SKScene
         }
         buttonLevel_7.selectedHandler =
         {
-                //if levelsUnlocked >= 7
-                //{
-                print("Going to level 5")
-                print("Going to level 1")
-                guard let skView = self.view as SKView! else
-                {
-                    print("Could not get Skview")
-                    return
-                }
-                
-                //2) load game scene
-                guard let scene = GameScene.level(7) else
-                {
-                    print("Could not make game scene, check the name is spelled correctly")
-                    return
-                }
-                
-                //3) ensure correct aspect mode
-                scene.scaleMode = .aspectFit
-                
-                //show debug
-                skView.showsPhysics = false
-                skView.showsDrawCount = true
-                skView.showsFPS = true
-                
-                //4) start game scene
-                skView.presentScene(scene)
-                //}
-                
-        }
-        
-        
-        func touchesBegan(touches: Set<UITouch>, with: UIEvent?)
-        {
-            let location = touches.first!.location(in: self)
+            //if levelsUnlocked >= 7
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
             
-            cameraNode.position.y = location.y
+            //2) load game scene
+            guard let scene = GameScene.level(7) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
+                
         }
+        
+        
+        
         
         buttonLevel_8.selectedHandler =
         {
-                //if levelsUnlocked >= 8
-                //{
-                print("Going to level 5")
-                print("Going to level 1")
-                guard let skView = self.view as SKView! else
-                {
-                    print("Could not get Skview")
-                    return
-                }
-                
-                //2) load game scene
-                guard let scene = GameScene.level(8) else
-                {
-                    print("Could not make game scene, check the name is spelled correctly")
-                    return
-                }
-                
-                //3) ensure correct aspect mode
-                scene.scaleMode = .aspectFit
-                
-                //show debug
-                skView.showsPhysics = false
-                skView.showsDrawCount = true
-                skView.showsFPS = true
-                
-                //4) start game scene
-                skView.presentScene(scene)
-                //}
-                
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(8) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
+            
         }
         
         buttonLevel_9.selectedHandler =
         {
-                //if levelsUnlocked >= 8
-                //{
-                print("Going to level 5")
-                print("Going to level 1")
-                guard let skView = self.view as SKView! else
-                {
-                    print("Could not get Skview")
-                    return
-                }
-                
-                //2) load game scene
-                guard let scene = GameScene.level(9) else
-                {
-                    print("Could not make game scene, check the name is spelled correctly")
-                    return
-                }
-                
-                //3) ensure correct aspect mode
-                scene.scaleMode = .aspectFit
-                
-                //show debug
-                skView.showsPhysics = false
-                skView.showsDrawCount = true
-                skView.showsFPS = true
-                
-                //4) start game scene
-                skView.presentScene(scene)
-                //}
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(9) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
                 
         }
         buttonLevel_10.selectedHandler =
         {
-                //if levelsUnlocked >= 8
-                //{
-                print("Going to level 5")
-                print("Going to level 1")
-                guard let skView = self.view as SKView! else
-                {
-                    print("Could not get Skview")
-                    return
-                }
-                
-                //2) load game scene
-                guard let scene = GameScene.level(10) else
-                {
-                    print("Could not make game scene, check the name is spelled correctly")
-                    return
-                }
-                
-                //3) ensure correct aspect mode
-                scene.scaleMode = .aspectFit
-                
-                //show debug
-                skView.showsPhysics = false
-                skView.showsDrawCount = true
-                skView.showsFPS = true
-                
-                //4) start game scene
-                skView.presentScene(scene)
-                //}
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(10) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
         }
         buttonLevel_11.selectedHandler =
         {
-                //if levelsUnlocked >= 8
-                //{
-                print("Going to level 5")
-                print("Going to level 1")
-                guard let skView = self.view as SKView! else
-                {
-                    print("Could not get Skview")
-                    return
-                }
-                
-                //2) load game scene
-                guard let scene = GameScene.level(11) else
-                {
-                    print("Could not make game scene, check the name is spelled correctly")
-                    return
-                }
-                
-                //3) ensure correct aspect mode
-                scene.scaleMode = .aspectFit
-                
-                //show debug
-                skView.showsPhysics = false
-                skView.showsDrawCount = true
-                skView.showsFPS = true
-                
-                //4) start game scene
-                skView.presentScene(scene)
-                //}
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(11) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
         }
         buttonLevel_12.selectedHandler =
         {
-                //if levelsUnlocked >= 8
-                //{
-                print("Going to level 5")
-                print("Going to level 1")
-                guard let skView = self.view as SKView! else
-                {
-                    print("Could not get Skview")
-                    return
-                }
-                
-                //2) load game scene
-                guard let scene = GameScene.level(12) else
-                {
-                    print("Could not make game scene, check the name is spelled correctly")
-                    return
-                }
-                
-                //3) ensure correct aspect mode
-                scene.scaleMode = .aspectFit
-                
-                //show debug
-                skView.showsPhysics = false
-                skView.showsDrawCount = true
-                skView.showsFPS = true
-                
-                //4) start game scene
-                skView.presentScene(scene)
-                //}
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(12) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
         }
         buttonLevel_13.selectedHandler =
             {
-                //if levelsUnlocked >= 8
-                //{
-                print("Going to level 5")
-                print("Going to level 1")
-                guard let skView = self.view as SKView! else
-                {
-                    print("Could not get Skview")
-                    return
-                }
-                
-                //2) load game scene
-                guard let scene = GameScene.level(13) else
-                {
-                    print("Could not make game scene, check the name is spelled correctly")
-                    return
-                }
-                
-                //3) ensure correct aspect mode
-                scene.scaleMode = .aspectFit
-                
-                //show debug
-                skView.showsPhysics = false
-                skView.showsDrawCount = true
-                skView.showsFPS = true
-                
-                //4) start game scene
-                skView.presentScene(scene)
-                //}
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(13) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
         }
         buttonLevel_14.selectedHandler =
         {
-                //if levelsUnlocked >= 8
-                //{
-                print("Going to level 5")
-                print("Going to level 1")
-                guard let skView = self.view as SKView! else
-                {
-                    print("Could not get Skview")
-                    return
-                }
-                
-                //2) load game scene
-                guard let scene = GameScene.level(14) else
-                {
-                    print("Could not make game scene, check the name is spelled correctly")
-                    return
-                }
-                
-                //3) ensure correct aspect mode
-                scene.scaleMode = .aspectFit
-                
-                //show debug
-                skView.showsPhysics = false
-                skView.showsDrawCount = true
-                skView.showsFPS = true
-                
-                //4) start game scene
-                skView.presentScene(scene)
-                //}
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(14) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
         }
-
-
+        buttonLevel_15.selectedHandler =
+        {
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(15) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
+        }
+        buttonLevel_16.selectedHandler =
+        {
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(16) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
+        }
     }
     
-    func moveCamera()
-    {
 
-    }
-    
 
-    override func sceneDidLoad()
-    {
-
-        
-        var swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes))
-        swipeUp.direction = UISwipeGestureRecognizerDirection.up
-        self.view?.addGestureRecognizer(swipeUp)
-        
-        var swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes))
-        swipeDown.direction = UISwipeGestureRecognizerDirection.down
-        self.view?.addGestureRecognizer(swipeDown)
-        
-        super.sceneDidLoad()
-    }
-    
     func handleSwipes(gesture: UISwipeGestureRecognizer)
     {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer
         {
             switch swipeGesture.direction
             {
-
             case UISwipeGestureRecognizerDirection.up:
-                cameraNode.run(SKAction.move(by: CGVector(dx: 0, dy: 35), duration: 0.25))
+                cameraNode.run(SKAction.move(by: CGVector(dx: 0, dy: -70), duration: 0.25))
+                print("swipe up")
             case UISwipeGestureRecognizerDirection.down:
-                cameraNode.run(SKAction.move(by: CGVector(dx: 0, dy: -35), duration: 0.25))
-            
-                
+                if cameraNode.position.y <= -50
+                {
+                    cameraNode.run(SKAction.move(by: CGVector(dx: 0, dy: 70), duration: 0.25))
+                }
+                print("swipe down")
             default: break
-           }
+            }
         }
     }
-
 }

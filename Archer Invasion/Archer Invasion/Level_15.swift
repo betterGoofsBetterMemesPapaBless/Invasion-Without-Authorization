@@ -2,7 +2,7 @@ import SpriteKit
 import AVFoundation
 import UIKit
 
-class Level_6: SKScene, SKPhysicsContactDelegate
+class Level_15: SKScene, SKPhysicsContactDelegate
 {
     var obstacleSource: SKNode!
     var buttonRestart: MSButtonNode!
@@ -48,8 +48,8 @@ class Level_6: SKScene, SKPhysicsContactDelegate
     override func didMove(to view: SKView)
     {
         /* Setup your scene here */
-        currentLevel = 6
-        currentScene = 6
+        currentLevel = 15
+        currentScene = 15
         back = self.childNode(withName: "back") as! MSButtonNode
         back.selectedHandler =
         {
@@ -89,7 +89,7 @@ class Level_6: SKScene, SKPhysicsContactDelegate
                 numOfAliens += 1
             }
         }
-        numOfLives = (numOfAliens/2) + 1
+        numOfLives = 2
         scrollLayer = self.childNode(withName: "//scrollLayer")
         startPoint = self.childNode(withName: "//position") as! SKSpriteNode
         hero = self.childNode(withName: "hero") as! SKSpriteNode
@@ -106,31 +106,29 @@ class Level_6: SKScene, SKPhysicsContactDelegate
         physicsWorld.contactDelegate = self
         
         buttonRestart.selectedHandler =
-            {
-                let skView = self.view as SKView!
-                
-                let scene = GameScene.level(self.currentLevel) as GameScene!
-                
-                scene?.scaleMode = .aspectFill
-                
-                skView?.presentScene(scene)
+        {
+            let skView = self.view as SKView!
+            
+            let scene = GameScene.level(self.currentLevel) as GameScene!
+            
+            scene?.scaleMode = .aspectFill
+            
+            skView?.presentScene(scene)
         }
         
         buttonRestart.state = .MSButtonNodeStateHidden
         
         nextLevelButton.selectedHandler =
+        {
+            currentScene += 1
+            guard let scene = GameScene.level(currentScene) else
             {
-                currentScene += 1
-                guard let scene = GameScene.level(currentScene) else
-                {
-                    print("Level \(self.currentLevel+1) is missing?")
-                    return
-                }
-                
-                scene.scaleMode = .aspectFit
-                view.presentScene(scene)
-                
-                
+                print("Level \(self.currentLevel+1) is missing?")
+                return
+            }
+            
+            scene.scaleMode = .aspectFit
+            view.presentScene(scene)
         }
         nextLevelButton.state = .MSButtonNodeStateHidden
     }
@@ -172,12 +170,13 @@ class Level_6: SKScene, SKPhysicsContactDelegate
                     dy /= hold
                     dx /= hold
                 }
+                
                 else if dy < 600 && dx < 600
                 {
                     let sum = abs(dx) + abs(dy)
                     let hold = 1200 / sum
-                    dx *= hold
-                    dy *= hold
+                    dx *= hold/2
+                    dy *= hold/2
                 }
                 newHero.physicsBody?.velocity = (CGVector(dx: dx, dy: dy))
                 sinceTouch = 0

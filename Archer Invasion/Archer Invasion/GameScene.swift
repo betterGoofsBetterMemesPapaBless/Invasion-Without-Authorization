@@ -173,20 +173,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                     dy /= hold
                     dx /= hold
                 }
+
                 
-                else if dx < 600
+                else if dy < 600 && dx < 600
                 {
-                    let hold = 600 / dx
+                    let sum = abs(dx) + abs(dy)
+                    let hold = 1200 / sum
                     dx *= hold
                     dy *= hold
                 }
-                
-                else if dy < 600
-                {
-                    let hold = 600 / dy
-                    dx *= hold
-                    dy *= hold
-                }
+
                 
                 newHero.physicsBody?.velocity = (CGVector(dx: dx, dy: dy))
                 sinceTouch = 0
