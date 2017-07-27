@@ -95,7 +95,7 @@ class Level_14: SKScene, SKPhysicsContactDelegate
         hero = self.childNode(withName: "hero") as! SKSpriteNode
         youWon = self.childNode(withName: "youWon") as! SKLabelNode
         youWon.isHidden = true
-        shoot = self.childNode(withName: "release") as! SKSpriteNode
+        shoot = self.childNode(withName: "//release") as! SKSpriteNode
         shoot.isHidden = true
         obstacleLayer = self.childNode(withName: "obstacleLayer")
         obstacleSource = self.childNode(withName: "obstacle")
@@ -182,7 +182,6 @@ class Level_14: SKScene, SKPhysicsContactDelegate
                 newHero.physicsBody?.velocity = (CGVector(dx: dx, dy: dy))
                 sinceTouch = 0
                 archerSwitch = 0
-                origin.isHidden = true
                 shoot.isHidden = false
                 ableToShoot = false
                 newHeroReference = newHero
@@ -363,7 +362,6 @@ class Level_14: SKScene, SKPhysicsContactDelegate
         //        origin.zRotation = CGFloat(atan(y/x))
         origin.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
         //        origin.zRotation -= 90
-        shoot.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
         //        shoot.zRotation += 90
         
     }

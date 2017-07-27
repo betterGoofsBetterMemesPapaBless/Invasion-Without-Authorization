@@ -1,10 +1,8 @@
-//
 //  MainMenu.swift
 //  PeevedPenguins
 //
 //  Created by Max Blackwell on 6/30/17.
 //  Copyright © 2017 Max Blackwell. All rights reserved.
-//
 
 import Foundation
 import SpriteKit
@@ -13,24 +11,23 @@ class MainMenu: SKScene
 {
     //UI connections
     var buttonPlay: MSButtonNode!
-    let backgroundImage = SKSpriteNode(imageNamed: "Earth-background.jpg")
+    var background = SKSpriteNode(imageNamed: "earth.jpg")
     
-
     
     override func didMove(to view: SKView)
     {
         //setup your scene here
         
         //setup UI connections
+        background.xScale = 0.2
+        background.yScale = 0.2
+        background.zPosition = -1
+        addChild(background)
         buttonPlay = self.childNode(withName: "buttonPlay") as! MSButtonNode
-        addChild(backgroundImage)
-        backgroundImage.zPosition = -1
-        backgroundImage.xScale = 0.25
-        backgroundImage.yScale = 0.25
-        backgroundImage.position = CGPoint(x: 0, y: 0)
+        
         buttonPlay.selectedHandler =
-            {
-                self.loadGame()
+        {
+            self.loadGame()
         }
     }
     

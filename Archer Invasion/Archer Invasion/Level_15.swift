@@ -181,7 +181,6 @@ class Level_15: SKScene, SKPhysicsContactDelegate
                 newHero.physicsBody?.velocity = (CGVector(dx: dx, dy: dy))
                 sinceTouch = 0
                 archerSwitch = 0
-                origin.isHidden = true
                 shoot.isHidden = false
                 ableToShoot = false
                 newHeroReference = newHero

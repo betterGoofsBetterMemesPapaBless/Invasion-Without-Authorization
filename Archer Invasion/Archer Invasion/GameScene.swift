@@ -96,7 +96,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         hero = self.childNode(withName: "hero") as! SKSpriteNode
         youWon = self.childNode(withName: "youWon") as! SKLabelNode
         youWon.isHidden = true
-        shoot = self.childNode(withName: "release") as! SKSpriteNode
+        shoot = self.childNode(withName: "//release") as! SKSpriteNode
         shoot.isHidden = true
         obstacleLayer = self.childNode(withName: "obstacleLayer")
         obstacleSource = self.childNode(withName: "obstacle")
@@ -187,7 +187,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 newHero.physicsBody?.velocity = (CGVector(dx: dx, dy: dy))
                 sinceTouch = 0
                 archerSwitch = 0
-                origin.isHidden = true
                 shoot.isHidden = false
                 ableToShoot = false
                 newHeroReference = newHero
@@ -246,7 +245,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             //reset angular velocity
             hero.physicsBody?.angularVelocity = 0
             buttonRestart.state = .MSButtonNodeStateActive
-            origin.isHidden = false
             shoot.isHidden = true
         }
         archerSwitch += fixedDelta
@@ -365,12 +363,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         let x = abs(location.x - origin.position.x)
         let y = abs(location.y - origin.position.y)
         
-//        origin.zRotation = CGFloat(atan(y/x))
         origin.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
-//        origin.zRotation -= 90
-        shoot.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
-//        shoot.zRotation += 90
-        
     }
 }
 

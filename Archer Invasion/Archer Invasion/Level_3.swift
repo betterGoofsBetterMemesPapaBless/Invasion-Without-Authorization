@@ -94,12 +94,13 @@ class Level_3: SKScene, SKPhysicsContactDelegate
         hero = self.childNode(withName: "hero") as! SKSpriteNode
         youWon = self.childNode(withName: "youWon") as! SKLabelNode
         youWon.isHidden = true
-        shoot = self.childNode(withName: "release") as! SKSpriteNode
+        shoot = self.childNode(withName: "//release") as! SKSpriteNode
         shoot.isHidden = true
         obstacleLayer = self.childNode(withName: "obstacleLayer")
         obstacleSource = self.childNode(withName: "obstacle")
         origin = self.childNode(withName: "origin") as! SKSpriteNode
         buttonRestart = self.childNode(withName: "buttonRestart") as! MSButtonNode
+        buttonRestart.isHidden = true
         ammo = self.childNode(withName: "lives") as! SKLabelNode
         
         physicsWorld.contactDelegate = self
@@ -183,7 +184,6 @@ class Level_3: SKScene, SKPhysicsContactDelegate
                 newHero.physicsBody?.velocity = (CGVector(dx: dx, dy: dy))
                 sinceTouch = 0
                 archerSwitch = 0
-                origin.isHidden = true
                 shoot.isHidden = false
                 ableToShoot = false
                 newHeroReference = newHero
@@ -242,13 +242,12 @@ class Level_3: SKScene, SKPhysicsContactDelegate
             //reset angular velocity
             hero.physicsBody?.angularVelocity = 0
             buttonRestart.state = .MSButtonNodeStateActive
-            origin.isHidden = false
+            buttonRestart.isHidden = false
             shoot.isHidden = true
         }
         archerSwitch += fixedDelta
         if archerSwitch >= 0.5
         {
-            origin.isHidden = false
             shoot.isHidden = true
         }
         
@@ -361,11 +360,7 @@ class Level_3: SKScene, SKPhysicsContactDelegate
         let x = abs(location.x - origin.position.x)
         let y = abs(location.y - origin.position.y)
         
-        //        origin.zRotation = CGFloat(atan(y/x))
         origin.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
-        //        origin.zRotation -= 90
-        shoot.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
-        //        shoot.zRotation += 90
         
     }
 }
