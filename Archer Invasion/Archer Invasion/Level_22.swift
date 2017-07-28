@@ -2,7 +2,7 @@ import SpriteKit
 import AVFoundation
 import UIKit
 
-class Level_14: SKScene, SKPhysicsContactDelegate
+class Level_22: SKScene, SKPhysicsContactDelegate
 {
     var obstacleSource: SKNode!
     var buttonRestart: MSButtonNode!
@@ -48,8 +48,8 @@ class Level_14: SKScene, SKPhysicsContactDelegate
     override func didMove(to view: SKView)
     {
         /* Setup your scene here */
-        currentLevel = 14
-        currentScene = 14
+        currentLevel = 22
+        currentScene = 22
         back = self.childNode(withName: "back") as! MSButtonNode
         back.selectedHandler =
         {
@@ -178,7 +178,7 @@ class Level_14: SKScene, SKPhysicsContactDelegate
                     dx *= hold
                     dy *= hold
                 }
-                
+
                 newHero.physicsBody?.velocity = (CGVector(dx: dx, dy: dy))
                 sinceTouch = 0
                 archerSwitch = 0

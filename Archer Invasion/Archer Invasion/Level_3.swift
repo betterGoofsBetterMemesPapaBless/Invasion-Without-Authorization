@@ -293,7 +293,7 @@ class Level_3: SKScene, SKPhysicsContactDelegate
             sinceExplosion = 0
             nodeA.run(action)
             numOfAliens -= 1
-            nodeB.physicsBody?.velocity = velocity
+//            nodeB.physicsBody?.velocity = velocity
         }
         
         if nodeA.name == "wall"
@@ -316,7 +316,7 @@ class Level_3: SKScene, SKPhysicsContactDelegate
             sinceExplosion = 0
             nodeB.run(action)
             numOfAliens -= 1
-            nodeA.physicsBody?.velocity = velocity
+//            nodeA.physicsBody?.velocity = velocity
         }
         
         if gameState != .active {return}

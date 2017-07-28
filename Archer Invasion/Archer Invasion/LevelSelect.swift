@@ -32,14 +32,17 @@ class LevelSelect: SKScene
     var buttonLevel_18: MSButtonNode!
     var buttonLevel_19: MSButtonNode!
     var buttonLevel_20: MSButtonNode!
+    var buttonLevel_21: MSButtonNode!
 
     var levelsUnlocked: Int!
 
     override func didMove(to view: SKView)
     {
-        background.xScale = 0.2
-        background.yScale = 0.2
+        background.xScale = 0.21
+        background.yScale = 0.21
         background.zPosition = -1
+        background.position = CGPoint(x: -13, y: 0)
+
         let swipeUp:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes))
         swipeUp.direction = UISwipeGestureRecognizerDirection.up
         view.addGestureRecognizer(swipeUp)
@@ -73,6 +76,7 @@ class LevelSelect: SKScene
         buttonLevel_18 = self.childNode(withName: "buttonLevel_18") as! MSButtonNode
         buttonLevel_19 = self.childNode(withName: "buttonLevel_19") as! MSButtonNode
         buttonLevel_20 = self.childNode(withName: "buttonLevel_20") as! MSButtonNode
+        buttonLevel_21 = self.childNode(withName: "buttonLevel_21") as! MSButtonNode
 
         buttonLevel_1.selectedHandler =
         {
@@ -688,6 +692,37 @@ class LevelSelect: SKScene
             
             //2) load game scene
             guard let scene = GameScene.level(20) else
+            {
+                print("Could not make game scene, check the name is spelled correctly")
+                return
+            }
+            
+            //3) ensure correct aspect mode
+            scene.scaleMode = .aspectFit
+            
+            //show debug
+            skView.showsPhysics = false
+            skView.showsDrawCount = true
+            skView.showsFPS = true
+            
+            //4) start game scene
+            skView.presentScene(scene)
+            //}
+        }
+        buttonLevel_21.selectedHandler =
+        {
+            //if levelsUnlocked >= 8
+            //{
+            print("Going to level 5")
+            print("Going to level 1")
+            guard let skView = self.view as SKView! else
+            {
+                print("Could not get Skview")
+                return
+            }
+            
+            //2) load game scene
+            guard let scene = GameScene.level(21) else
             {
                 print("Could not make game scene, check the name is spelled correctly")
                 return

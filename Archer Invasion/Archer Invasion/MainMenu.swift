@@ -19,9 +19,10 @@ class MainMenu: SKScene
         //setup your scene here
         
         //setup UI connections
-        background.xScale = 0.2
-        background.yScale = 0.2
+        background.xScale = 0.21
+        background.yScale = 0.21
         background.zPosition = -1
+        background.position = CGPoint(x: -13, y: 0)
         addChild(background)
         buttonPlay = self.childNode(withName: "buttonPlay") as! MSButtonNode
         
