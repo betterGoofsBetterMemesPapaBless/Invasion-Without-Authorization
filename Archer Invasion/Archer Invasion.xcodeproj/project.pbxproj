@@ -19,6 +19,16 @@
 		8F0949101F2908E400912217 /* Level_20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F09490F1F2908E400912217 /* Level_20.swift */; };
 		8F0949121F2908F900912217 /* Level_20.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F0949111F2908F800912217 /* Level_20.sks */; };
 		8F0949151F290A4800912217 /* button_level 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0949141F290A4800912217 /* button_level 20.png */; };
+		8F0A69001F2B9421006290AE /* button_level 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0A68FF1F2B9421006290AE /* button_level 22.png */; };
+		8F0A69021F2B95FA006290AE /* button_level 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0A69011F2B95FA006290AE /* button_level 23.png */; };
+		8F0A69041F2B9767006290AE /* Level_23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0A69031F2B9767006290AE /* Level_23.swift */; };
+		8F0A69061F2B9785006290AE /* Level_23.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F0A69051F2B9785006290AE /* Level_23.sks */; };
+		8F0A69091F2BB534006290AE /* Level_24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0A69081F2BB534006290AE /* Level_24.swift */; };
+		8F0A690B1F2BB560006290AE /* Level_24.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F0A690A1F2BB560006290AE /* Level_24.sks */; };
+		8F0A690E1F2BB581006290AE /* button_level 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0A690D1F2BB581006290AE /* button_level 24.png */; };
+		8F0A69101F2BB75D006290AE /* Level_25.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0A690F1F2BB75D006290AE /* Level_25.swift */; };
+		8F0A69121F2BB772006290AE /* Level_25.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F0A69111F2BB772006290AE /* Level_25.sks */; };
+		8F0A69151F2BDBC8006290AE /* button_level 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0A69141F2BDBC8006290AE /* button_level 25.png */; };
 		8F346BA61F22CA0900CEA0B4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BA51F22CA0900CEA0B4 /* GoogleMobileAds.framework */; };
 		8F346BA91F22CA2600CEA0B4 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BA71F22CA2600CEA0B4 /* EventKit.framework */; };
 		8F346BAA1F22CA2600CEA0B4 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BA81F22CA2600CEA0B4 /* EventKitUI.framework */; };
@@ -153,6 +163,16 @@
 		8F09490F1F2908E400912217 /* Level_20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_20.swift; sourceTree = "<group>"; };
 		8F0949111F2908F800912217 /* Level_20.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_20.sks; sourceTree = "<group>"; };
 		8F0949141F290A4800912217 /* button_level 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 20.png"; path = "../../../../Downloads/button_level 20.png"; sourceTree = "<group>"; };
+		8F0A68FF1F2B9421006290AE /* button_level 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 22.png"; path = "../../../../Downloads/button_level 22.png"; sourceTree = "<group>"; };
+		8F0A69011F2B95FA006290AE /* button_level 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 23.png"; path = "../../../../Downloads/button_level 23.png"; sourceTree = "<group>"; };
+		8F0A69031F2B9767006290AE /* Level_23.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_23.swift; sourceTree = "<group>"; };
+		8F0A69051F2B9785006290AE /* Level_23.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_23.sks; sourceTree = "<group>"; };
+		8F0A69081F2BB534006290AE /* Level_24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_24.swift; sourceTree = "<group>"; };
+		8F0A690A1F2BB560006290AE /* Level_24.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_24.sks; sourceTree = "<group>"; };
+		8F0A690D1F2BB581006290AE /* button_level 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 24.png"; path = "../../../../Downloads/button_level 24.png"; sourceTree = "<group>"; };
+		8F0A690F1F2BB75D006290AE /* Level_25.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_25.swift; sourceTree = "<group>"; };
+		8F0A69111F2BB772006290AE /* Level_25.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_25.sks; sourceTree = "<group>"; };
+		8F0A69141F2BDBC8006290AE /* button_level 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 25.png"; path = "../../../../Downloads/button_level 25.png"; sourceTree = "<group>"; };
 		8F346BA51F22CA0900CEA0B4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		8F346BA71F22CA2600CEA0B4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		8F346BA81F22CA2600CEA0B4 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
@@ -374,6 +394,10 @@
 		8F0949071F29060A00912217 /* buttons */ = {
 			isa = PBXGroup;
 			children = (
+				8F0A69141F2BDBC8006290AE /* button_level 25.png */,
+				8F0A690D1F2BB581006290AE /* button_level 24.png */,
+				8F0A69011F2B95FA006290AE /* button_level 23.png */,
+				8F0A68FF1F2B9421006290AE /* button_level 22.png */,
 				8FFA9DB31F2AAD0C009E5D0F /* button_level 21.png */,
 				8F0949141F290A4800912217 /* button_level 20.png */,
 				8F09490D1F29079F00912217 /* button_level 19.png */,
@@ -419,6 +443,33 @@
 				8F0949111F2908F800912217 /* Level_20.sks */,
 			);
 			name = "Level 20";
+			sourceTree = "<group>";
+		};
+		8F0A69071F2B9790006290AE /* Level 23 */ = {
+			isa = PBXGroup;
+			children = (
+				8F0A69031F2B9767006290AE /* Level_23.swift */,
+				8F0A69051F2B9785006290AE /* Level_23.sks */,
+			);
+			name = "Level 23";
+			sourceTree = "<group>";
+		};
+		8F0A690C1F2BB56D006290AE /* Level 24 */ = {
+			isa = PBXGroup;
+			children = (
+				8F0A69081F2BB534006290AE /* Level_24.swift */,
+				8F0A690A1F2BB560006290AE /* Level_24.sks */,
+			);
+			name = "Level 24";
+			sourceTree = "<group>";
+		};
+		8F0A69131F2BB77E006290AE /* Level 25 */ = {
+			isa = PBXGroup;
+			children = (
+				8F0A690F1F2BB75D006290AE /* Level_25.swift */,
+				8F0A69111F2BB772006290AE /* Level_25.sks */,
+			);
+			name = "Level 25";
 			sourceTree = "<group>";
 		};
 		8F346BA41F22CA0900CEA0B4 /* Frameworks */ = {
@@ -678,6 +729,9 @@
 			children = (
 				8FFA9DB21F2AAC8C009E5D0F /* Level 21 */,
 				8FFA9DB91F2AAEC8009E5D0F /* Level 22 */,
+				8F0A69071F2B9790006290AE /* Level 23 */,
+				8F0A690C1F2BB56D006290AE /* Level 24 */,
+				8F0A69131F2BB77E006290AE /* Level 25 */,
 			);
 			name = "Levels 21-30";
 			sourceTree = "<group>";
@@ -815,14 +869,18 @@
 				8F6E53EC1F1E8D9F00DE75DA /* object.sks in Resources */,
 				8F351E9D1F214B0A00782C8F /* Level_3.sks in Resources */,
 				8FF75A591F22839C0092AD17 /* Level_6.sks in Resources */,
+				8F0A690B1F2BB560006290AE /* Level_24.sks in Resources */,
 				8F0949121F2908F900912217 /* Level_20.sks in Resources */,
 				8FF75A3F1F2265E00092AD17 /* button_next-level.png in Resources */,
+				8F0A69001F2B9421006290AE /* button_level 22.png in Resources */,
 				8FE28DB71F27A1A300BCD412 /* button_level 15.png in Resources */,
 				8FFA9DA81F2A4F15009E5D0F /* earth.jpg in Resources */,
 				8FB12CD71F183E0000FDB4DF /* shoot.sks in Resources */,
 				8FF75A411F22670A0092AD17 /* button_restart.png in Resources */,
 				8F8DF27E1F26B27000FF8C75 /* Level_14.sks in Resources */,
+				8F0A69021F2B95FA006290AE /* button_level 23.png in Resources */,
 				8FE28DBB1F27C90600BCD412 /* Level_16.sks in Resources */,
+				8F0A69151F2BDBC8006290AE /* button_level 25.png in Resources */,
 				8FF75A431F2269FC0092AD17 /* Level_4.sks in Resources */,
 				8F6C48121F1FBDE3003C5521 /* explosion.png in Resources */,
 				8FCD61841F293538000DFFBB /* cannonRoyaltyFree.png in Resources */,
@@ -839,6 +897,7 @@
 				8F6C481A1F1FFE42003C5521 /* earth-background-2.jpg in Resources */,
 				8FD065B31F265A7100154D9B /* Level_10.sks in Resources */,
 				8FF75A451F226B670092AD17 /* Level_5.sks in Resources */,
+				8F0A69121F2BB772006290AE /* Level_25.sks in Resources */,
 				8FD065AF1F26587B00154D9B /* button_level_9.png in Resources */,
 				8FD065A51F26548D00154D9B /* Level_8.sks in Resources */,
 				8FD8D10F1F21606700A5FC9F /* button_level_3.png in Resources */,
@@ -846,9 +905,11 @@
 				8F8DF2811F26B57D00FF8C75 /* button_level 14.png in Resources */,
 				8FB12CC51F1825EC00FDB4DF /* Level_1.sks in Resources */,
 				8F7E24671F216BAC00EEF091 /* cannon.png in Resources */,
+				8F0A690E1F2BB581006290AE /* button_level 24.png in Resources */,
 				8FD065A11F26500300154D9B /* button_level_7.png in Resources */,
 				8F09490B1F29076600912217 /* Level_19.sks in Resources */,
 				8F8DF2851F26B6DB00FF8C75 /* Level_15.sks in Resources */,
+				8F0A69061F2B9785006290AE /* Level_23.sks in Resources */,
 				8FFA9DB41F2AAD0C009E5D0F /* button_level 21.png in Resources */,
 				8FFA9DAC1F2A58BD009E5D0F /* metal in Resources */,
 				8FB12C981F18248600FDB4DF /* Main.storyboard in Resources */,
@@ -913,6 +974,8 @@
 				8FFA9DAE1F2AAC5C009E5D0F /* Level_21.swift in Sources */,
 				8F0948F41F29004C00912217 /* Level_17.swift in Sources */,
 				8F0949101F2908E400912217 /* Level_20.swift in Sources */,
+				8F0A69091F2BB534006290AE /* Level_24.swift in Sources */,
+				8F0A69101F2BB75D006290AE /* Level_25.swift in Sources */,
 				8FD065B11F265A6000154D9B /* Level_10.swift in Sources */,
 				8FB12C931F18248600FDB4DF /* GameScene.swift in Sources */,
 				8FFA9DB61F2AAEA6009E5D0F /* Level_22.swift in Sources */,
@@ -922,6 +985,7 @@
 				8FD8D1001F215EFF00A5FC9F /* LevelSelect.swift in Sources */,
 				8FD065AA1F26583000154D9B /* Level_9.swift in Sources */,
 				8FD065A31F26547300154D9B /* Level_8.swift in Sources */,
+				8F0A69041F2B9767006290AE /* Level_23.swift in Sources */,
 				8FB12C951F18248600FDB4DF /* GameViewController.swift in Sources */,
 				8FF75A571F2283770092AD17 /* Level_6.swift in Sources */,
 				8FE28DB91F27C8F300BCD412 /* Level_16.swift in Sources */,
