@@ -20,7 +20,7 @@ class Level_12: SKScene, SKPhysicsContactDelegate
     var scrollLayer: SKNode!
     var sinceTouch : CFTimeInterval = 0
     var spawnTimer: CFTimeInterval = 0
-    let fixedDelta : CFTimeInterval = 1.0 / 30
+    let fixedDelta : CFTimeInterval = 1.0 / 60
     var gameState: GameSceneState = .active
     var possibleToLose = true
     var found = false
@@ -120,6 +120,8 @@ class Level_12: SKScene, SKPhysicsContactDelegate
         nextLevelButton.selectedHandler =
         {
             currentScene += 1
+            levelsUnlocked += 1
+
             guard let scene = GameScene.level(currentScene) else
             {
                 print("Level \(self.currentLevel+1) is missing?")

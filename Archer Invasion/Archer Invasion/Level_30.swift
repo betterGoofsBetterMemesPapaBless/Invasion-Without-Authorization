@@ -2,7 +2,7 @@ import SpriteKit
 import AVFoundation
 import UIKit
 
-class Level_15: SKScene, SKPhysicsContactDelegate
+class Level_30: SKScene, SKPhysicsContactDelegate
 {
     var obstacleSource: SKNode!
     var buttonRestart: MSButtonNode!
@@ -48,8 +48,8 @@ class Level_15: SKScene, SKPhysicsContactDelegate
     override func didMove(to view: SKView)
     {
         /* Setup your scene here */
-        currentLevel = 15
-        currentScene = 15
+        currentLevel = 30
+        currentScene = 30
         back = self.childNode(withName: "back") as! MSButtonNode
         back.selectedHandler =
         {
@@ -89,7 +89,7 @@ class Level_15: SKScene, SKPhysicsContactDelegate
                 numOfAliens += 1
             }
         }
-        numOfLives = 2
+        numOfLives = 1
         scrollLayer = self.childNode(withName: "//scrollLayer")
         startPoint = self.childNode(withName: "//position") as! SKSpriteNode
         hero = self.childNode(withName: "hero") as! SKSpriteNode
@@ -135,7 +135,6 @@ class Level_15: SKScene, SKPhysicsContactDelegate
         nextLevelButton.state = .MSButtonNodeStateHidden
     }
     
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         firstShot = true
@@ -177,9 +176,10 @@ class Level_15: SKScene, SKPhysicsContactDelegate
                 {
                     let sum = abs(dx) + abs(dy)
                     let hold = 1200 / sum
-                    dx *= hold/2
-                    dy *= hold/2
+                    dx *= hold
+                    dy *= hold
                 }
+
                 newHero.physicsBody?.velocity = (CGVector(dx: dx, dy: dy))
                 sinceTouch = 0
                 archerSwitch = 0
@@ -307,7 +307,6 @@ class Level_15: SKScene, SKPhysicsContactDelegate
         }
         if nodeB.name == "goal"
         {
-            
             let newExplosion = explosion.copy() as! SKSpriteNode
             
             newExplosion.position = nodeB.convert(nodeB.position, to: self)
@@ -321,7 +320,6 @@ class Level_15: SKScene, SKPhysicsContactDelegate
         
         if gameState != .active {return}
     }
-    
     
     class func level(_ levelNumber: Int) -> GameScene?
     {
@@ -343,7 +341,7 @@ class Level_15: SKScene, SKPhysicsContactDelegate
         shoot.isHidden = true
         //stop any new angular velocity being applied
         hero.physicsBody?.allowsRotation = false
-        nextLevelButton.state = .MSButtonNodeStateActive
+        buttonRestart.state = .MSButtonNodeStateActive
         //reset angular velocity
         hero.physicsBody?.angularVelocity = 0
         possibleToLose = false
@@ -367,5 +365,3 @@ class Level_15: SKScene, SKPhysicsContactDelegate
         
     }
 }
-
-

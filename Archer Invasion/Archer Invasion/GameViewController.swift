@@ -16,11 +16,12 @@ class GameViewController: UIViewController, GADBannerViewDelegate
 {
     var adMobBannerView = GADBannerView()
     let ADMOB_BANNER_UNIT_ID = "ca-app-pub-6488075142692939/3600664824"
-
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+                
         if let view = self.view as! SKView?
         {
             // Load the SKScene from 'GameScene.sks'
@@ -38,6 +39,7 @@ class GameViewController: UIViewController, GADBannerViewDelegate
             view.showsFPS = true
             view.showsNodeCount = false
             view.showsPhysics = true
+
         }
         initAdMobBanner()
     }
@@ -119,4 +121,9 @@ class GameViewController: UIViewController, GADBannerViewDelegate
         hideBanner(adMobBannerView)
     }    
 
+}
+
+func writeData(_ levels: Int)
+{
+    
 }
