@@ -2,7 +2,7 @@ import SpriteKit
 import AVFoundation
 import UIKit
 
-class Level_30: SKScene, SKPhysicsContactDelegate
+class Level_33: SKScene, SKPhysicsContactDelegate
 {
     var obstacleSource: SKNode!
     var buttonRestart: MSButtonNode!
@@ -48,8 +48,8 @@ class Level_30: SKScene, SKPhysicsContactDelegate
     override func didMove(to view: SKView)
     {
         /* Setup your scene here */
-        currentLevel = 30
-        currentScene = 30
+        currentLevel = 33
+        currentScene = 33
         back = self.childNode(withName: "back") as! MSButtonNode
         back.selectedHandler =
         {
@@ -126,6 +126,13 @@ class Level_30: SKScene, SKPhysicsContactDelegate
             guard let scene = GameScene.level(currentScene) else
             {
                 print("Level \(self.currentLevel+1) is missing?")
+                let skView = self.view as SKView!
+                
+                let scene = GameScene.level(self.currentLevel) as GameScene!
+                
+                scene?.scaleMode = .aspectFill
+                
+                skView?.presentScene(scene)
                 return
             }
             
@@ -350,6 +357,8 @@ class Level_30: SKScene, SKPhysicsContactDelegate
     
     func rotateCanon(_ touches: Set<UITouch>)
     {
+        
+        
         let touch = touches.first!
         let location = touch.location(in: self)
         
@@ -360,5 +369,6 @@ class Level_30: SKScene, SKPhysicsContactDelegate
         origin.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
         //        origin.zRotation -= 90
         //        shoot.zRotation += 90
+        
     }
 }

@@ -2,7 +2,7 @@ import SpriteKit
 import AVFoundation
 import UIKit
 
-class Level_30: SKScene, SKPhysicsContactDelegate
+class Level_troll: SKScene, SKPhysicsContactDelegate
 {
     var obstacleSource: SKNode!
     var buttonRestart: MSButtonNode!
@@ -79,7 +79,6 @@ class Level_30: SKScene, SKPhysicsContactDelegate
         }
 
         nextLevelButton = childNode(withName: "nextLevelButton") as! MSButtonNode
-        nextLevelButton.isHidden = true
         alienParent = self.childNode(withName: "alienParent")
         explosion = self.childNode(withName: "explosion") as! SKSpriteNode
         for child in (scene?.children)!
@@ -89,7 +88,7 @@ class Level_30: SKScene, SKPhysicsContactDelegate
                 numOfAliens += 1
             }
         }
-        numOfLives = 2
+        numOfLives = 1
         scrollLayer = self.childNode(withName: "//scrollLayer")
         startPoint = self.childNode(withName: "//position") as! SKSpriteNode
         hero = self.childNode(withName: "hero") as! SKSpriteNode
@@ -334,14 +333,13 @@ class Level_30: SKScene, SKPhysicsContactDelegate
     
     func gameWon()
     {
-        nextLevelButton.isHidden = false
+        nextLevelButton.state = .MSButtonNodeStateActive
         youWon.isHidden = false
         gameState = .gameOver
         origin.isHidden = false
         shoot.isHidden = true
         //stop any new angular velocity being applied
         hero.physicsBody?.allowsRotation = false
-        nextLevelButton.state = .MSButtonNodeStateActive
         //reset angular velocity
         hero.physicsBody?.angularVelocity = 0
         possibleToLose = false
@@ -350,6 +348,8 @@ class Level_30: SKScene, SKPhysicsContactDelegate
     
     func rotateCanon(_ touches: Set<UITouch>)
     {
+        
+        
         let touch = touches.first!
         let location = touch.location(in: self)
         
@@ -360,5 +360,6 @@ class Level_30: SKScene, SKPhysicsContactDelegate
         origin.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
         //        origin.zRotation -= 90
         //        shoot.zRotation += 90
+        
     }
 }

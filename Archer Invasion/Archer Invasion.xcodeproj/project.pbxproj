@@ -63,8 +63,8 @@
 		8F89C88C1F2F8FB2008AA190 /* Level_29.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89C88B1F2F8FB2008AA190 /* Level_29.swift */; };
 		8F89C88E1F2F8FC0008AA190 /* Level_29.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F89C88D1F2F8FC0008AA190 /* Level_29.sks */; };
 		8F89C8911F2F925D008AA190 /* button_level 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F89C8901F2F925D008AA190 /* button_level 29.png */; };
-		8F89C8931F2F93EE008AA190 /* Level_30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89C8921F2F93EE008AA190 /* Level_30.swift */; };
-		8F89C8951F2F940C008AA190 /* Level_30.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F89C8941F2F940C008AA190 /* Level_30.sks */; };
+		8F89C8931F2F93EE008AA190 /* Level_troll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89C8921F2F93EE008AA190 /* Level_troll.swift */; };
+		8F89C8951F2F940C008AA190 /* Level_troll.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F89C8941F2F940C008AA190 /* Level_troll.sks */; };
 		8F89C8981F2F9526008AA190 /* button_level 30.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F89C8971F2F9526008AA190 /* button_level 30.png */; };
 		8F89C8A01F2FF688008AA190 /* cannonBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F89C89F1F2FF688008AA190 /* cannonBall.png */; };
 		8F8DF2751F269B7600FF8C75 /* button_level 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F8DF2741F269B7600FF8C75 /* button_level 13.png */; };
@@ -124,6 +124,16 @@
 		8FE28DB91F27C8F300BCD412 /* Level_16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE28DB81F27C8F300BCD412 /* Level_16.swift */; };
 		8FE28DBB1F27C90600BCD412 /* Level_16.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FE28DBA1F27C90600BCD412 /* Level_16.sks */; };
 		8FE28DBE1F28050200BCD412 /* button_level 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FE28DBD1F28050200BCD412 /* button_level 16.png */; };
+		8FEBF5BD1F323296009BF4C2 /* Level_30.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FEBF5BC1F323296009BF4C2 /* Level_30.sks */; };
+		8FEBF5C11F323375009BF4C2 /* Level_30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEBF5C01F323375009BF4C2 /* Level_30.swift */; };
+		8FEBF5C31F323692009BF4C2 /* button_level 31.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FEBF5C21F323692009BF4C2 /* button_level 31.png */; };
+		8FEBF5C81F32390B009BF4C2 /* Level_31.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEBF5C71F32390B009BF4C2 /* Level_31.swift */; };
+		8FEBF5CA1F32391E009BF4C2 /* Level_31.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FEBF5C91F32391E009BF4C2 /* Level_31.sks */; };
+		8FEBF5CC1F323FCE009BF4C2 /* Level_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEBF5CB1F323FCE009BF4C2 /* Level_32.swift */; };
+		8FEBF5CE1F323FE6009BF4C2 /* Level_32.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FEBF5CD1F323FE6009BF4C2 /* Level_32.sks */; };
+		8FEBF5D11F324014009BF4C2 /* button_level 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FEBF5D01F324014009BF4C2 /* button_level 32.png */; };
+		8FEBF5D31F325658009BF4C2 /* Level_33.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEBF5D21F325658009BF4C2 /* Level_33.swift */; };
+		8FEBF5D51F32566B009BF4C2 /* Level_33.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FEBF5D41F32566B009BF4C2 /* Level_33.sks */; };
 		8FF75A3D1F225DE00092AD17 /* button_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF75A3C1F225DE00092AD17 /* button_play.png */; };
 		8FF75A3F1F2265E00092AD17 /* button_next-level.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF75A3E1F2265E00092AD17 /* button_next-level.png */; };
 		8FF75A411F22670A0092AD17 /* button_restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF75A401F22670A0092AD17 /* button_restart.png */; };
@@ -222,8 +232,8 @@
 		8F89C88B1F2F8FB2008AA190 /* Level_29.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_29.swift; sourceTree = "<group>"; };
 		8F89C88D1F2F8FC0008AA190 /* Level_29.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_29.sks; sourceTree = "<group>"; };
 		8F89C8901F2F925D008AA190 /* button_level 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_level 29.png"; sourceTree = "<group>"; };
-		8F89C8921F2F93EE008AA190 /* Level_30.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_30.swift; sourceTree = "<group>"; };
-		8F89C8941F2F940C008AA190 /* Level_30.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_30.sks; sourceTree = "<group>"; };
+		8F89C8921F2F93EE008AA190 /* Level_troll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_troll.swift; sourceTree = "<group>"; };
+		8F89C8941F2F940C008AA190 /* Level_troll.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_troll.sks; sourceTree = "<group>"; };
 		8F89C8971F2F9526008AA190 /* button_level 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_level 30.png"; sourceTree = "<group>"; };
 		8F89C89F1F2FF688008AA190 /* cannonBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cannonBall.png; sourceTree = "<group>"; };
 		8F8DF2741F269B7600FF8C75 /* button_level 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 13.png"; path = "../../../../Downloads/button_level 13.png"; sourceTree = "<group>"; };
@@ -289,6 +299,17 @@
 		8FE28DB81F27C8F300BCD412 /* Level_16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_16.swift; sourceTree = "<group>"; };
 		8FE28DBA1F27C90600BCD412 /* Level_16.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_16.sks; sourceTree = "<group>"; };
 		8FE28DBD1F28050200BCD412 /* button_level 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 16.png"; path = "../../../../Downloads/button_level 16.png"; sourceTree = "<group>"; };
+		8FEBF5B91F32306C009BF4C2 /* Archer Invasion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Archer Invasion-Bridging-Header.h"; sourceTree = "<group>"; };
+		8FEBF5BC1F323296009BF4C2 /* Level_30.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_30.sks; sourceTree = "<group>"; };
+		8FEBF5C01F323375009BF4C2 /* Level_30.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_30.swift; sourceTree = "<group>"; };
+		8FEBF5C21F323692009BF4C2 /* button_level 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_level 31.png"; sourceTree = "<group>"; };
+		8FEBF5C71F32390B009BF4C2 /* Level_31.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_31.swift; sourceTree = "<group>"; };
+		8FEBF5C91F32391E009BF4C2 /* Level_31.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_31.sks; sourceTree = "<group>"; };
+		8FEBF5CB1F323FCE009BF4C2 /* Level_32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_32.swift; sourceTree = "<group>"; };
+		8FEBF5CD1F323FE6009BF4C2 /* Level_32.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_32.sks; sourceTree = "<group>"; };
+		8FEBF5D01F324014009BF4C2 /* button_level 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_level 32.png"; sourceTree = "<group>"; };
+		8FEBF5D21F325658009BF4C2 /* Level_33.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_33.swift; sourceTree = "<group>"; };
+		8FEBF5D41F32566B009BF4C2 /* Level_33.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_33.sks; sourceTree = "<group>"; };
 		8FF75A3C1F225DE00092AD17 /* button_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_play.png; sourceTree = "<group>"; };
 		8FF75A3E1F2265E00092AD17 /* button_next-level.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_next-level.png"; sourceTree = "<group>"; };
 		8FF75A401F22670A0092AD17 /* button_restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_restart.png; sourceTree = "<group>"; };
@@ -302,7 +323,6 @@
 		8FF75A561F2283770092AD17 /* Level_6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level_6.swift; path = ../Level_6.swift; sourceTree = "<group>"; };
 		8FF75A581F22839C0092AD17 /* Level_6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_6.sks; sourceTree = "<group>"; };
 		8FF75A5A1F2283CA0092AD17 /* button_level_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_level_6.png; sourceTree = "<group>"; };
-		8FF75A5C1F22A9A90092AD17 /* Archer Invasion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Archer Invasion-Bridging-Header.h"; sourceTree = "<group>"; };
 		8FF75A601F22C5840092AD17 /* alienShip2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alienShip2.png; sourceTree = "<group>"; };
 		8FFA9DA71F2A4F15009E5D0F /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = SOURCE_ROOT; };
 		8FFA9DA91F2A57C9009E5D0F /* brick */ = {isa = PBXFileReference; explicitFileType = image.jpeg; name = brick; path = "Archer Invasion/brick"; sourceTree = SOURCE_ROOT; };
@@ -424,6 +444,8 @@
 		8F0949071F29060A00912217 /* buttons */ = {
 			isa = PBXGroup;
 			children = (
+				8FEBF5D01F324014009BF4C2 /* button_level 32.png */,
+				8FEBF5C21F323692009BF4C2 /* button_level 31.png */,
 				8F89C8971F2F9526008AA190 /* button_level 30.png */,
 				8F89C8901F2F925D008AA190 /* button_level 29.png */,
 				8F89C8891F2F8DA6008AA190 /* button_level 28.png */,
@@ -565,8 +587,8 @@
 		8F89C8961F2F9413008AA190 /* Level 30 */ = {
 			isa = PBXGroup;
 			children = (
-				8F89C8921F2F93EE008AA190 /* Level_30.swift */,
-				8F89C8941F2F940C008AA190 /* Level_30.sks */,
+				8FEBF5C01F323375009BF4C2 /* Level_30.swift */,
+				8FEBF5BC1F323296009BF4C2 /* Level_30.sks */,
 			);
 			name = "Level 30";
 			sourceTree = "<group>";
@@ -623,16 +645,19 @@
 		8FB12C8B1F18248600FDB4DF /* Archer Invasion */ = {
 			isa = PBXGroup;
 			children = (
+				8FEBF5B91F32306C009BF4C2 /* Archer Invasion-Bridging-Header.h */,
 				8FB12C8C1F18248600FDB4DF /* AppDelegate.swift */,
 				8FB12CD01F18269400FDB4DF /* Obstacle.sks */,
 				8FB12C901F18248600FDB4DF /* Actions.sks */,
 				8F0949051F2905D800912217 /* Levels 1-10 */,
 				8F0949061F2905E800912217 /* Levels 11-20 */,
 				8FFA9DB11F2AAC7D009E5D0F /* Levels 21-30 */,
+				8FEBF5BE1F3232A4009BF4C2 /* Levels 31-40 */,
 				8FB12CC01F18257000FDB4DF /* CGFloatRandom.swift */,
 				8FB12CC21F1825A600FDB4DF /* MSButtonNode.swift */,
 				8F6E53EB1F1E8D9F00DE75DA /* object.sks */,
 				8FB12C941F18248600FDB4DF /* GameViewController.swift */,
+				8FEBF5C41F3238BF009BF4C2 /* Level troll */,
 				8F6C48131F1FBF93003C5521 /* particles.sks */,
 				8F0948F91F29009200912217 /* Main Menu */,
 				8F0948F81F29008300912217 /* Level Select */,
@@ -643,7 +668,6 @@
 				8FB12C9E1F18248600FDB4DF /* Info.plist */,
 				8F7E24661F216BAC00EEF091 /* cannon.png */,
 				8F6C48111F1FBDE3003C5521 /* explosion.png */,
-				8FF75A5C1F22A9A90092AD17 /* Archer Invasion-Bridging-Header.h */,
 			);
 			path = "Archer Invasion";
 			sourceTree = "<group>";
@@ -748,6 +772,52 @@
 				8FE28DBA1F27C90600BCD412 /* Level_16.sks */,
 			);
 			name = "Level 16";
+			sourceTree = "<group>";
+		};
+		8FEBF5BE1F3232A4009BF4C2 /* Levels 31-40 */ = {
+			isa = PBXGroup;
+			children = (
+				8FEBF5BF1F3232B2009BF4C2 /* Level 31 */,
+				8FEBF5CF1F323FF2009BF4C2 /* Level 32 */,
+				8FEBF5D61F325676009BF4C2 /* Level 33 */,
+			);
+			name = "Levels 31-40";
+			sourceTree = "<group>";
+		};
+		8FEBF5BF1F3232B2009BF4C2 /* Level 31 */ = {
+			isa = PBXGroup;
+			children = (
+				8FEBF5C71F32390B009BF4C2 /* Level_31.swift */,
+				8FEBF5C91F32391E009BF4C2 /* Level_31.sks */,
+			);
+			name = "Level 31";
+			sourceTree = "<group>";
+		};
+		8FEBF5C41F3238BF009BF4C2 /* Level troll */ = {
+			isa = PBXGroup;
+			children = (
+				8F89C8921F2F93EE008AA190 /* Level_troll.swift */,
+				8F89C8941F2F940C008AA190 /* Level_troll.sks */,
+			);
+			name = "Level troll";
+			sourceTree = "<group>";
+		};
+		8FEBF5CF1F323FF2009BF4C2 /* Level 32 */ = {
+			isa = PBXGroup;
+			children = (
+				8FEBF5CB1F323FCE009BF4C2 /* Level_32.swift */,
+				8FEBF5CD1F323FE6009BF4C2 /* Level_32.sks */,
+			);
+			name = "Level 32";
+			sourceTree = "<group>";
+		};
+		8FEBF5D61F325676009BF4C2 /* Level 33 */ = {
+			isa = PBXGroup;
+			children = (
+				8FEBF5D21F325658009BF4C2 /* Level_33.swift */,
+				8FEBF5D41F32566B009BF4C2 /* Level_33.sks */,
+			);
+			name = "Level 33";
 			sourceTree = "<group>";
 		};
 		8FF75A481F227F960092AD17 /* Level 5 */ = {
@@ -956,13 +1026,17 @@
 				8FF75A591F22839C0092AD17 /* Level_6.sks in Resources */,
 				8F0A690B1F2BB560006290AE /* Level_24.sks in Resources */,
 				8F0949121F2908F900912217 /* Level_20.sks in Resources */,
+				8FEBF5D11F324014009BF4C2 /* button_level 32.png in Resources */,
 				8FF75A3F1F2265E00092AD17 /* button_next-level.png in Resources */,
 				8F0A69001F2B9421006290AE /* button_level 22.png in Resources */,
 				8FE28DB71F27A1A300BCD412 /* button_level 15.png in Resources */,
 				8FFA9DA81F2A4F15009E5D0F /* earth.jpg in Resources */,
+				8FEBF5BD1F323296009BF4C2 /* Level_30.sks in Resources */,
 				8FB12CD71F183E0000FDB4DF /* shoot.sks in Resources */,
 				8F89C88E1F2F8FC0008AA190 /* Level_29.sks in Resources */,
+				8FEBF5CE1F323FE6009BF4C2 /* Level_32.sks in Resources */,
 				8FF75A411F22670A0092AD17 /* button_restart.png in Resources */,
+				8FEBF5CA1F32391E009BF4C2 /* Level_31.sks in Resources */,
 				8F8DF27E1F26B27000FF8C75 /* Level_14.sks in Resources */,
 				8F0A69021F2B95FA006290AE /* button_level 23.png in Resources */,
 				8FE28DBB1F27C90600BCD412 /* Level_16.sks in Resources */,
@@ -1015,6 +1089,7 @@
 				8F0948FB1F2900B100912217 /* button_level 17.png in Resources */,
 				8FB12CCE1F18263200FDB4DF /* MainMenu.sks in Resources */,
 				8FD065C31F26666A00154D9B /* Level_12.sks in Resources */,
+				8FEBF5C31F323692009BF4C2 /* button_level 31.png in Resources */,
 				8FB12CD11F18269400FDB4DF /* Obstacle.sks in Resources */,
 				8F0A69171F2BECA7006290AE /* button_level 26.png in Resources */,
 				8F7E24691F216BBD00EEF091 /* cannonFire.png in Resources */,
@@ -1025,6 +1100,7 @@
 				8FD0659E1F264F8700154D9B /* Level_7.sks in Resources */,
 				8F89C8911F2F925D008AA190 /* button_level 29.png in Resources */,
 				8F8DF2751F269B7600FF8C75 /* button_level 13.png in Resources */,
+				8FEBF5D51F32566B009BF4C2 /* Level_33.sks in Resources */,
 				8F09490E1F29079F00912217 /* button_level 19.png in Resources */,
 				8FB12C9D1F18248600FDB4DF /* LaunchScreen.storyboard in Resources */,
 				8FF75A541F2282060092AD17 /* button_back.png in Resources */,
@@ -1036,7 +1112,7 @@
 				8FD065AC1F26584500154D9B /* Level_9.sks in Resources */,
 				8FB12CC71F1825FC00FDB4DF /* hero.sks in Resources */,
 				8F89C8A01F2FF688008AA190 /* cannonBall.png in Resources */,
-				8F89C8951F2F940C008AA190 /* Level_30.sks in Resources */,
+				8F89C8951F2F940C008AA190 /* Level_troll.sks in Resources */,
 				8FD8D10B1F215FEF00A5FC9F /* button_level_1.png in Resources */,
 				8F351E9B1F2121A800782C8F /* Level_2.sks in Resources */,
 			);
@@ -1074,11 +1150,13 @@
 				8F0A69101F2BB75D006290AE /* Level_25.swift in Sources */,
 				8F0A69191F2BECFE006290AE /* Level_26.swift in Sources */,
 				8FD065B11F265A6000154D9B /* Level_10.swift in Sources */,
+				8FEBF5CC1F323FCE009BF4C2 /* Level_32.swift in Sources */,
 				8FB12C931F18248600FDB4DF /* GameScene.swift in Sources */,
 				8FFA9DB61F2AAEA6009E5D0F /* Level_22.swift in Sources */,
 				8FB12CCF1F18263200FDB4DF /* MainMenu.swift in Sources */,
 				8F0949091F29075300912217 /* Level_19.swift in Sources */,
 				8FD0659C1F264F7700154D9B /* Level_7.swift in Sources */,
+				8FEBF5C81F32390B009BF4C2 /* Level_31.swift in Sources */,
 				8FD8D1001F215EFF00A5FC9F /* LevelSelect.swift in Sources */,
 				8FD065AA1F26583000154D9B /* Level_9.swift in Sources */,
 				8FD065A31F26547300154D9B /* Level_8.swift in Sources */,
@@ -1086,14 +1164,16 @@
 				8FB12C951F18248600FDB4DF /* GameViewController.swift in Sources */,
 				8FF75A571F2283770092AD17 /* Level_6.swift in Sources */,
 				8F89C87E1F2F8B06008AA190 /* Level_27.swift in Sources */,
-				8F89C8931F2F93EE008AA190 /* Level_30.swift in Sources */,
+				8F89C8931F2F93EE008AA190 /* Level_troll.swift in Sources */,
 				8FE28DB91F27C8F300BCD412 /* Level_16.swift in Sources */,
 				8FF75A471F226C9F0092AD17 /* Level_5.swift in Sources */,
 				8F89C8851F2F8D70008AA190 /* Level_28.swift in Sources */,
 				8F8DF2771F26AD2D00FF8C75 /* Level_13.swift in Sources */,
+				8FEBF5D31F325658009BF4C2 /* Level_33.swift in Sources */,
 				8F8DF2831F26B6C400FF8C75 /* Level_15.swift in Sources */,
 				8FB12C8D1F18248600FDB4DF /* AppDelegate.swift in Sources */,
 				8FB12CC11F18257000FDB4DF /* CGFloatRandom.swift in Sources */,
+				8FEBF5C11F323375009BF4C2 /* Level_30.swift in Sources */,
 				8FD065BA1F26647500154D9B /* Level_11.swift in Sources */,
 				8FB12CC31F1825A600FDB4DF /* MSButtonNode.swift in Sources */,
 				8F8DF27C1F26B25A00FF8C75 /* Level_14.swift in Sources */,
@@ -1263,6 +1343,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-Invasion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Archer Invasion/Archer Invasion-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1284,6 +1365,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Max.Archer-Invasion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Archer Invasion/Archer Invasion-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
