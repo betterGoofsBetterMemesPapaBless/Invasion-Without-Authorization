@@ -46,6 +46,8 @@ class LevelSelect: SKScene
     var buttonLevel_30: MSButtonNode!
     var buttonLevel_31: MSButtonNode!
     var buttonLevel_32: MSButtonNode!
+    var buttonLevel_33: MSButtonNode!
+    var buttonLevel_34: MSButtonNode!
 
     var highScore = UserDefaults().integer(forKey: "HIGHSCORE")
 
@@ -103,6 +105,8 @@ class LevelSelect: SKScene
         buttonLevel_30 = self.childNode(withName: "buttonLevel_30") as! MSButtonNode
         buttonLevel_31 = self.childNode(withName: "buttonLevel_31") as! MSButtonNode
         buttonLevel_32 = self.childNode(withName: "buttonLevel_32") as! MSButtonNode
+        buttonLevel_33 = self.childNode(withName: "buttonLevel_33") as! MSButtonNode
+        buttonLevel_34 = self.childNode(withName: "buttonLevel_34") as! MSButtonNode
 
         buttonLevel_1.selectedHandler =
         {
@@ -232,6 +236,14 @@ class LevelSelect: SKScene
         {
             self.loadGame(32)
         }
+        buttonLevel_33.selectedHandler =
+        {
+            self.loadGame(33)
+        }
+        buttonLevel_34.selectedHandler =
+        {
+            self.loadGame(34)
+        }
     }
     
     func loadGame(_ level: Int)
@@ -268,7 +280,7 @@ class LevelSelect: SKScene
             switch swipeGesture.direction
             {
             case UISwipeGestureRecognizerDirection.up:
-                if cameraNode.position.y >= -400
+                if cameraNode.position.y >= -500
                 {
                     cameraNode.run(SKAction.move(by: CGVector(dx: 0, dy: -70), duration: 0.25))
                 }
