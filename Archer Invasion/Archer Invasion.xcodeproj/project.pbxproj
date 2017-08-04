@@ -132,7 +132,6 @@
 		8FB12CCE1F18263200FDB4DF /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CCC1F18263200FDB4DF /* MainMenu.sks */; };
 		8FB12CCF1F18263200FDB4DF /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12CCD1F18263200FDB4DF /* MainMenu.swift */; };
 		8FB12CD11F18269400FDB4DF /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CD01F18269400FDB4DF /* Obstacle.sks */; };
-		8FB12CD71F183E0000FDB4DF /* shoot.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CD61F183E0000FDB4DF /* shoot.sks */; };
 		8FC8B7AE1F33858E00DC1CDA /* cannonSoundFX.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8B7AD1F33858E00DC1CDA /* cannonSoundFX.mp3 */; };
 		8FC8B7B01F33881A00DC1CDA /* Big Explosion Cut Off.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8B7AF1F33881A00DC1CDA /* Big Explosion Cut Off.mp3 */; };
 		8FCD61841F293538000DFFBB /* cannonRoyaltyFree.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCD61831F293538000DFFBB /* cannonRoyaltyFree.png */; };
@@ -356,7 +355,6 @@
 		8FB12CCC1F18263200FDB4DF /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
 		8FB12CCD1F18263200FDB4DF /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		8FB12CD01F18269400FDB4DF /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
-		8FB12CD61F183E0000FDB4DF /* shoot.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = shoot.sks; sourceTree = "<group>"; };
 		8FC8B7AD1F33858E00DC1CDA /* cannonSoundFX.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cannonSoundFX.mp3; sourceTree = "<group>"; };
 		8FC8B7AF1F33881A00DC1CDA /* Big Explosion Cut Off.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Big Explosion Cut Off.mp3"; sourceTree = "<group>"; };
 		8FCD61831F293538000DFFBB /* cannonRoyaltyFree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cannonRoyaltyFree.png; path = ../../../../Downloads/cannonRoyaltyFree.png; sourceTree = "<group>"; };
@@ -770,7 +768,6 @@
 		8FB12C801F18248600FDB4DF = {
 			isa = PBXGroup;
 			children = (
-				8FB12CD61F183E0000FDB4DF /* shoot.sks */,
 				8FB12C8B1F18248600FDB4DF /* Archer Invasion */,
 				8FB12CA61F18248600FDB4DF /* Archer InvasionTests */,
 				8FB12CB11F18248600FDB4DF /* Archer InvasionUITests */,
@@ -1223,7 +1220,6 @@
 				8FFA9DA81F2A4F15009E5D0F /* earth.jpg in Resources */,
 				8FEBF5BD1F323296009BF4C2 /* Level_30.sks in Resources */,
 				8F33B33C1F339C940017CB31 /* button_level 17 (1).png in Resources */,
-				8FB12CD71F183E0000FDB4DF /* shoot.sks in Resources */,
 				8F33B3301F339BE70017CB31 /* button_level 11 (1).png in Resources */,
 				8F89C88E1F2F8FC0008AA190 /* Level_29.sks in Resources */,
 				8FEBF5CE1F323FE6009BF4C2 /* Level_32.sks in Resources */,
