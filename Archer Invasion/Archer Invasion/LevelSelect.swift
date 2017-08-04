@@ -48,6 +48,8 @@ class LevelSelect: SKScene
     var buttonLevel_32: MSButtonNode!
     var buttonLevel_33: MSButtonNode!
     var buttonLevel_34: MSButtonNode!
+    var buttonLevel_35: MSButtonNode!
+    var buttonLevel_36: MSButtonNode!
 
     var highScore = UserDefaults().integer(forKey: "HIGHSCORE")
 
@@ -107,6 +109,8 @@ class LevelSelect: SKScene
         buttonLevel_32 = self.childNode(withName: "buttonLevel_32") as! MSButtonNode
         buttonLevel_33 = self.childNode(withName: "buttonLevel_33") as! MSButtonNode
         buttonLevel_34 = self.childNode(withName: "buttonLevel_34") as! MSButtonNode
+        buttonLevel_35 = self.childNode(withName: "buttonLevel_35") as! MSButtonNode
+        buttonLevel_36 = self.childNode(withName: "buttonLevel_36") as! MSButtonNode
 
         buttonLevel_1.selectedHandler =
         {
@@ -243,6 +247,14 @@ class LevelSelect: SKScene
         buttonLevel_34.selectedHandler =
         {
             self.loadGame(34)
+        }
+        buttonLevel_35.selectedHandler =
+        {
+            self.loadGame(35)
+        }
+        buttonLevel_36.selectedHandler =
+        {
+            self.loadGame(36)
         }
     }
     

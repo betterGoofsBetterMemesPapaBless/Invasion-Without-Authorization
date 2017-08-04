@@ -142,6 +142,8 @@ class Level_12: SKScene, SKPhysicsContactDelegate
         {
             if ableToShoot == true && numOfLives > 0
             {
+                let fire = SKAction.playSoundFileNamed("cannonSoundFX", waitForCompletion: false)
+                self.run(fire)
                 rotateCanon(touches)
                 let newHero = hero.copy() as! SKSpriteNode
                 numOfLives -= 1
@@ -284,6 +286,8 @@ class Level_12: SKScene, SKPhysicsContactDelegate
         /* Did our hero pass through the 'goal'? */
         if nodeA.name == "goal"
         {
+            let sound = SKAction.playSoundFileNamed("Big Explosion Cut Off", waitForCompletion: false)
+            self.run(sound)
             let newExplosion = explosion.copy() as! SKSpriteNode
             newExplosion.position = nodeA.convert(nodeA.position, to: self)
             newExplosion.name = "newExplosion"
@@ -307,7 +311,8 @@ class Level_12: SKScene, SKPhysicsContactDelegate
         {
             
             let newExplosion = explosion.copy() as! SKSpriteNode
-            
+            let sound = SKAction.playSoundFileNamed("Big Explosion Cut Off", waitForCompletion: false)
+            self.run(sound)
             newExplosion.position = nodeB.convert(nodeB.position, to: self)
             newExplosion.name = "newExplosion"
             addChild(newExplosion)

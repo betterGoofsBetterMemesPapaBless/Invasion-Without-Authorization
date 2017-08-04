@@ -2,7 +2,7 @@ import SpriteKit
 import AVFoundation
 import UIKit
 
-class Level_troll: SKScene, SKPhysicsContactDelegate
+class Level_36: SKScene, SKPhysicsContactDelegate
 {
     var obstacleSource: SKNode!
     var buttonRestart: MSButtonNode!
@@ -48,8 +48,8 @@ class Level_troll: SKScene, SKPhysicsContactDelegate
     override func didMove(to view: SKView)
     {
         /* Setup your scene here */
-        currentLevel = 30
-        currentScene = 30
+        currentLevel = 36
+        currentScene = 36
         back = self.childNode(withName: "back") as! MSButtonNode
         back.selectedHandler =
         {
@@ -108,7 +108,7 @@ class Level_troll: SKScene, SKPhysicsContactDelegate
         {
             let skView = self.view as SKView!
             
-            let scene = GameScene.level(self.currentLevel) as GameScene!
+            let scene = GameScene.level(1) as GameScene!
             
             scene?.scaleMode = .aspectFill
             
@@ -141,6 +141,9 @@ class Level_troll: SKScene, SKPhysicsContactDelegate
         {
             if ableToShoot == true && numOfLives > 0
             {
+
+                let fire = SKAction.playSoundFileNamed("cannonSoundFX", waitForCompletion: false)
+                self.run(fire)
                 rotateCanon(touches)
                 let newHero = hero.copy() as! SKSpriteNode
                 numOfLives -= 1
@@ -285,6 +288,8 @@ class Level_troll: SKScene, SKPhysicsContactDelegate
         /* Did our hero pass through the 'goal'? */
         if nodeA.name == "goal"
         {
+            let sound = SKAction.playSoundFileNamed("Big Explosion Cut Off", waitForCompletion: false)
+            self.run(sound)
             let newExplosion = explosion.copy() as! SKSpriteNode
             newExplosion.position = nodeA.convert(nodeA.position, to: self)
             newExplosion.name = "newExplosion"
@@ -307,7 +312,8 @@ class Level_troll: SKScene, SKPhysicsContactDelegate
         if nodeB.name == "goal"
         {
             let newExplosion = explosion.copy() as! SKSpriteNode
-            
+            let sound = SKAction.playSoundFileNamed("Big Explosion Cut Off", waitForCompletion: false)
+            self.run(sound)
             newExplosion.position = nodeB.convert(nodeB.position, to: self)
             newExplosion.name = "newExplosion"
             addChild(newExplosion)
@@ -333,7 +339,7 @@ class Level_troll: SKScene, SKPhysicsContactDelegate
     
     func gameWon()
     {
-        nextLevelButton.state = .MSButtonNodeStateActive
+        buttonRestart.state = .MSButtonNodeStateActive
         youWon.isHidden = false
         gameState = .gameOver
         origin.isHidden = false
