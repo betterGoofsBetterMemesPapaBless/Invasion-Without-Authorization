@@ -108,7 +108,7 @@ class Level_36: SKScene, SKPhysicsContactDelegate
         {
             let skView = self.view as SKView!
             
-            let scene = GameScene.level(1) as GameScene!
+            let scene = GameScene.level(self.currentLevel) as GameScene!
             
             scene?.scaleMode = .aspectFill
             
@@ -122,9 +122,9 @@ class Level_36: SKScene, SKPhysicsContactDelegate
             currentScene += 1
             levelsUnlocked += 1
 
-            guard let scene = GameScene.level(currentScene) else
+            guard let scene = GameScene.level(1) else
             {
-                print("Level \(self.currentLevel+1) is missing?")
+                print("Level \(1) is missing?")
                 return
             }
             
@@ -339,7 +339,7 @@ class Level_36: SKScene, SKPhysicsContactDelegate
     
     func gameWon()
     {
-        buttonRestart.state = .MSButtonNodeStateActive
+        nextLevelButton.state = .MSButtonNodeStateActive
         youWon.isHidden = false
         gameState = .gameOver
         origin.isHidden = false
