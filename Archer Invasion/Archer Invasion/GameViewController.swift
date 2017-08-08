@@ -47,7 +47,7 @@ class GameViewController: UIViewController, GADBannerViewDelegate
         bannerView.delegate = self
         bannerView.adUnitID = "ca-app-pub-6488075142692939/3600664824"
         bannerView.rootViewController = self
-//        bannerView.load(request)
+        bannerView.load(request)
     }
     
     override var shouldAutorotate: Bool
