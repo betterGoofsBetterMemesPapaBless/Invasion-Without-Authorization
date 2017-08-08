@@ -19,10 +19,10 @@ class MainMenu: SKScene
         //setup your scene here
         
         //setup UI connections
-        background.xScale = 0.21
-        background.yScale = 0.21
+        background.xScale = 0.25
+        background.yScale = 0.25
         background.zPosition = -1
-        background.position = CGPoint(x: -13, y: 0)
+        background.position = CGPoint(x: -13, y: -20)
         addChild(background)
         buttonPlay = self.childNode(withName: "buttonPlay") as! MSButtonNode
         
@@ -52,11 +52,7 @@ class MainMenu: SKScene
         scene.scaleMode = .aspectFit
         
         //show debug
-        skView.showsPhysics = false
-        skView.showsDrawCount = true
-        skView.showsFPS = true
-        
-        //4) start game scene
+               //4) start game scene
         skView.presentScene(scene)
     }
 }

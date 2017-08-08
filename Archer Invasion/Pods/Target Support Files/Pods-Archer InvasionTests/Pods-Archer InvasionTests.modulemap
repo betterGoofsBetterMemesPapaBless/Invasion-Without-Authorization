@@ -1,0 +1,6 @@
+framework module Pods_Archer_InvasionTests {
+  umbrella header "Pods-Archer InvasionTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

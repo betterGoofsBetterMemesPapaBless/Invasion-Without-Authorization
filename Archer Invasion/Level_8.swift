@@ -70,11 +70,7 @@ class Level_8: SKScene, SKPhysicsContactDelegate
             scene.scaleMode = .aspectFit
             
             //show debug
-            skView.showsPhysics = false
-            skView.showsDrawCount = true
-            skView.showsFPS = true
-            
-            //4) start game scene
+                       //4) start game scene
             skView.presentScene(scene)
         }
 
@@ -121,7 +117,6 @@ class Level_8: SKScene, SKPhysicsContactDelegate
         nextLevelButton.selectedHandler =
             {
                 currentScene += 1
-                levelsUnlocked += 1
 
                 guard let scene = GameScene.level(currentScene) else
                 {
@@ -363,8 +358,8 @@ class Level_8: SKScene, SKPhysicsContactDelegate
         let touch = touches.first!
         let location = touch.location(in: self)
         
-        let x = abs(location.x - origin.position.x)
-        let y = abs(location.y - origin.position.y)
+        let x = (location.x - origin.position.x)
+        let y = (location.y - origin.position.y)
         
         //        origin.zRotation = CGFloat(atan(y/x))
         origin.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))

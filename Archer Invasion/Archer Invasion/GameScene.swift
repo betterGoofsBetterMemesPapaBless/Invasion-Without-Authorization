@@ -73,9 +73,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             scene.scaleMode = .aspectFit
             
             //show debug
-            skView.showsPhysics = false
-            skView.showsDrawCount = true
-            skView.showsFPS = true
+
             
             //4) start game scene
             skView.presentScene(scene)
@@ -123,7 +121,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         {
             currentScene += 1
             
-            levelsUnlocked += 1
             guard let scene = GameScene.level(currentScene) else
             {
                 print("Level \(self.currentLevel+1) is missing?")
@@ -367,8 +364,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         let touch = touches.first!
         let location = touch.location(in: self)
         
-        let x = abs(location.x - origin.position.x)
-        let y = abs(location.y - origin.position.y)
+        let x = (location.x - origin.position.x)
+        let y = (location.y - origin.position.y)
         
         origin.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
     }

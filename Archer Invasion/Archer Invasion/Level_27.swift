@@ -70,9 +70,7 @@ class Level_27: SKScene, SKPhysicsContactDelegate
             scene.scaleMode = .aspectFit
             
             //show debug
-            skView.showsPhysics = false
-            skView.showsDrawCount = true
-            skView.showsFPS = true
+
             
             //4) start game scene
             skView.presentScene(scene)
@@ -121,7 +119,6 @@ class Level_27: SKScene, SKPhysicsContactDelegate
         nextLevelButton.selectedHandler =
         {
             currentScene += 1
-            levelsUnlocked += 1
 
             guard let scene = GameScene.level(currentScene) else
             {

@@ -8,7 +8,6 @@ import SpriteKit
 import Foundation
 import GameplayKit
 import UIKit
-var levelsUnlocked = 1
 
 class LevelSelect: SKScene
 {
@@ -53,15 +52,13 @@ class LevelSelect: SKScene
 
     var highScore = UserDefaults().integer(forKey: "HIGHSCORE")
 
-    var levelsUnlocked: Int!
 
     override func didMove(to view: SKView)
     {
-        saveHighScore(6)
-        background.xScale = 0.21
-        background.yScale = 0.21
+        background.xScale = 0.25
+        background.yScale = 0.25
         background.zPosition = -1
-        background.position = CGPoint(x: -13, y: 0)
+        background.position = CGPoint(x: -13, y: -20)
 
         let swipeUp:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes))
         swipeUp.direction = UISwipeGestureRecognizerDirection.up
@@ -275,14 +272,10 @@ class LevelSelect: SKScene
         
         //3) ensure correct aspect mode
         scene.scaleMode = .aspectFit
+        view?.presentScene(scene)
+
         
         //show debug
-        skView.showsPhysics = false
-        skView.showsDrawCount = true
-        skView.showsFPS = true
-        
-        //4) start game scene
-        skView.presentScene(scene)
     }
 
     func handleSwipes(gesture: UISwipeGestureRecognizer)
@@ -298,7 +291,7 @@ class LevelSelect: SKScene
                 }
                 print("swipe up")
             case UISwipeGestureRecognizerDirection.down:
-                if cameraNode.position.y <= -50
+                if cameraNode.position.y <= 50
                 {
                     cameraNode.run(SKAction.move(by: CGVector(dx: 0, dy: 70), duration: 0.25))
                 }
@@ -309,8 +302,3 @@ class LevelSelect: SKScene
     }
 }
 
-func saveHighScore(_ currentLevel: Int)
-{
-    UserDefaults.standard.set(currentLevel, forKey: "HIGHSCORE")
-    levelsUnlocked = UserDefaults().integer(forKey: "HIGHSCORE")
-}

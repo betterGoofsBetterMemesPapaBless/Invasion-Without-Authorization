@@ -15,9 +15,9 @@ import AudioToolbox
 class GameViewController: UIViewController, GADBannerViewDelegate
 {
     var adMobBannerView = GADBannerView()
-    let ADMOB_BANNER_UNIT_ID = "ca-app-pub-6488075142692939/3600664824"
     
     
+    @IBOutlet var bannerView: GADBannerView!
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -36,11 +36,18 @@ class GameViewController: UIViewController, GADBannerViewDelegate
             
             view.ignoresSiblingOrder = true
             
-            view.showsFPS = true
+//            view.showsFPS = true
             view.showsNodeCount = false
-            view.showsPhysics = true
+//            view.showsPhysics = true
 
         }
+        
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        bannerView.delegate = self
+        bannerView.adUnitID = "ca-app-pub-6488075142692939/3600664824"
+        bannerView.rootViewController = self
+//        bannerView.load(request)
     }
     
     override var shouldAutorotate: Bool

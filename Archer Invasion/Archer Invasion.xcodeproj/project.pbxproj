@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442CC62E14A8F99AF0821812 /* Pods_Archer_InvasionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E8173F062EF25FB63BE198 /* Pods_Archer_InvasionUITests.framework */; };
+		899D6345783686A21D881C9A /* Pods_Archer_Invasion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79E76854F11C0442C6F7DA3 /* Pods_Archer_Invasion.framework */; };
 		8F0948F41F29004C00912217 /* Level_17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0948F31F29004C00912217 /* Level_17.swift */; };
 		8F0948F61F29006500912217 /* Level_17.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F0948F51F29006500912217 /* Level_17.sks */; };
 		8F0948FB1F2900B100912217 /* button_level 17.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0948FA1F2900B100912217 /* button_level 17.png */; };
@@ -85,6 +87,7 @@
 		8F346BBC1F22CA8B00CEA0B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F346BBB1F22CA8B00CEA0B4 /* SystemConfiguration.framework */; };
 		8F351E9B1F2121A800782C8F /* Level_2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F351E9A1F2121A800782C8F /* Level_2.sks */; };
 		8F351E9D1F214B0A00782C8F /* Level_3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F351E9C1F214B0A00782C8F /* Level_3.sks */; };
+		8F38C27D1F38DC25004F367A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F38C27C1F38DC25004F367A /* GoogleService-Info.plist */; };
 		8F6C48121F1FBDE3003C5521 /* explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C48111F1FBDE3003C5521 /* explosion.png */; };
 		8F6E53E61F1E725100DE75DA /* alienShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E53E51F1E725100DE75DA /* alienShip.png */; };
 		8F6E53EC1F1E8D9F00DE75DA /* object.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E53EB1F1E8D9F00DE75DA /* object.sks */; };
@@ -124,8 +127,8 @@
 		8FB12CCE1F18263200FDB4DF /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CCC1F18263200FDB4DF /* MainMenu.sks */; };
 		8FB12CCF1F18263200FDB4DF /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB12CCD1F18263200FDB4DF /* MainMenu.swift */; };
 		8FB12CD11F18269400FDB4DF /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FB12CD01F18269400FDB4DF /* Obstacle.sks */; };
-		8FC8B7AE1F33858E00DC1CDA /* cannonSoundFX.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8B7AD1F33858E00DC1CDA /* cannonSoundFX.mp3 */; };
-		8FC8B7B01F33881A00DC1CDA /* Big Explosion Cut Off.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8B7AF1F33881A00DC1CDA /* Big Explosion Cut Off.mp3 */; };
+		8FC8B7AE1F33858E00DC1CDA /* cannonSoundFX.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8B7AD1F33858E00DC1CDA /* cannonSoundFX.caf */; };
+		8FC8B7B01F33881A00DC1CDA /* Big Explosion Cut Off.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8FC8B7AF1F33881A00DC1CDA /* Big Explosion Cut Off.caf */; };
 		8FCD61841F293538000DFFBB /* cannonRoyaltyFree.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCD61831F293538000DFFBB /* cannonRoyaltyFree.png */; };
 		8FD0659C1F264F7700154D9B /* Level_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0659B1F264F7700154D9B /* Level_7.swift */; };
 		8FD0659E1F264F8700154D9B /* Level_7.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0659D1F264F8700154D9B /* Level_7.sks */; };
@@ -198,6 +201,7 @@
 		8FFA9DB41F2AAD0C009E5D0F /* button_level 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FFA9DB31F2AAD0C009E5D0F /* button_level 21.png */; };
 		8FFA9DB61F2AAEA6009E5D0F /* Level_22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA9DB51F2AAEA6009E5D0F /* Level_22.swift */; };
 		8FFA9DB81F2AAEBC009E5D0F /* Level_22.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8FFA9DB71F2AAEBC009E5D0F /* Level_22.sks */; };
+		B7938CFA6613B23708804A27 /* Pods_Archer_InvasionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3947BA0A0E7EE0C7411F0C /* Pods_Archer_InvasionTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +222,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14A865BAD73D20DE54E17FD8 /* Pods-Archer InvasionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Archer InvasionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Archer InvasionTests/Pods-Archer InvasionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78E8173F062EF25FB63BE198 /* Pods_Archer_InvasionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Archer_InvasionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E121A4F1202130B949826B /* Pods-Archer Invasion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Archer Invasion.release.xcconfig"; path = "Pods/Target Support Files/Pods-Archer Invasion/Pods-Archer Invasion.release.xcconfig"; sourceTree = "<group>"; };
 		8F0948F31F29004C00912217 /* Level_17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_17.swift; sourceTree = "<group>"; };
 		8F0948F51F29006500912217 /* Level_17.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_17.sks; sourceTree = "<group>"; };
 		8F0948FA1F2900B100912217 /* button_level 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 17.png"; path = "../../../../Downloads/button_level 17.png"; sourceTree = "<group>"; };
@@ -296,6 +303,7 @@
 		8F346BBB1F22CA8B00CEA0B4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8F351E9A1F2121A800782C8F /* Level_2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_2.sks; sourceTree = "<group>"; };
 		8F351E9C1F214B0A00782C8F /* Level_3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_3.sks; sourceTree = "<group>"; };
+		8F38C27C1F38DC25004F367A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8F6C48111F1FBDE3003C5521 /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
 		8F6E53E51F1E725100DE75DA /* alienShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alienShip.png; sourceTree = "<group>"; };
 		8F6E53EB1F1E8D9F00DE75DA /* object.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = object.sks; sourceTree = "<group>"; };
@@ -341,8 +349,8 @@
 		8FB12CCC1F18263200FDB4DF /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
 		8FB12CCD1F18263200FDB4DF /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		8FB12CD01F18269400FDB4DF /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
-		8FC8B7AD1F33858E00DC1CDA /* cannonSoundFX.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cannonSoundFX.mp3; sourceTree = "<group>"; };
-		8FC8B7AF1F33881A00DC1CDA /* Big Explosion Cut Off.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Big Explosion Cut Off.mp3"; sourceTree = "<group>"; };
+		8FC8B7AD1F33858E00DC1CDA /* cannonSoundFX.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cannonSoundFX.caf; sourceTree = "<group>"; };
+		8FC8B7AF1F33881A00DC1CDA /* Big Explosion Cut Off.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Big Explosion Cut Off.caf"; sourceTree = "<group>"; };
 		8FCD61831F293538000DFFBB /* cannonRoyaltyFree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cannonRoyaltyFree.png; path = ../../../../Downloads/cannonRoyaltyFree.png; sourceTree = "<group>"; };
 		8FD0659B1F264F7700154D9B /* Level_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_7.swift; sourceTree = SOURCE_ROOT; };
 		8FD0659D1F264F8700154D9B /* Level_7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_7.sks; sourceTree = "<group>"; };
@@ -416,6 +424,12 @@
 		8FFA9DB31F2AAD0C009E5D0F /* button_level 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_level 21.png"; path = "../../../../Downloads/button_level 21.png"; sourceTree = "<group>"; };
 		8FFA9DB51F2AAEA6009E5D0F /* Level_22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_22.swift; sourceTree = "<group>"; };
 		8FFA9DB71F2AAEBC009E5D0F /* Level_22.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_22.sks; sourceTree = "<group>"; };
+		BEC3A71E52C274DB1473452C /* Pods-Archer InvasionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Archer InvasionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Archer InvasionUITests/Pods-Archer InvasionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA3947BA0A0E7EE0C7411F0C /* Pods_Archer_InvasionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Archer_InvasionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD27C2432ADC829A027D786 /* Pods-Archer InvasionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Archer InvasionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Archer InvasionUITests/Pods-Archer InvasionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7657C40964479E4F664C7C5 /* Pods-Archer Invasion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Archer Invasion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Archer Invasion/Pods-Archer Invasion.debug.xcconfig"; sourceTree = "<group>"; };
+		E79E76854F11C0442C6F7DA3 /* Pods_Archer_Invasion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Archer_Invasion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5BF534D484412CFE07A76A /* Pods-Archer InvasionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Archer InvasionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Archer InvasionTests/Pods-Archer InvasionTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -435,6 +449,7 @@
 				8F346BA91F22CA2600CEA0B4 /* EventKit.framework in Frameworks */,
 				8F346BAA1F22CA2600CEA0B4 /* EventKitUI.framework in Frameworks */,
 				8F346BA61F22CA0900CEA0B4 /* GoogleMobileAds.framework in Frameworks */,
+				899D6345783686A21D881C9A /* Pods_Archer_Invasion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +457,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7938CFA6613B23708804A27 /* Pods_Archer_InvasionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,12 +465,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442CC62E14A8F99AF0821812 /* Pods_Archer_InvasionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89DEB3C6A65A0B9D5243B8E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7657C40964479E4F664C7C5 /* Pods-Archer Invasion.debug.xcconfig */,
+				89E121A4F1202130B949826B /* Pods-Archer Invasion.release.xcconfig */,
+				14A865BAD73D20DE54E17FD8 /* Pods-Archer InvasionTests.debug.xcconfig */,
+				FC5BF534D484412CFE07A76A /* Pods-Archer InvasionTests.release.xcconfig */,
+				CFD27C2432ADC829A027D786 /* Pods-Archer InvasionUITests.debug.xcconfig */,
+				BEC3A71E52C274DB1473452C /* Pods-Archer InvasionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8F0948F71F29006D00912217 /* Level 17 */ = {
 			isa = PBXGroup;
 			children = (
@@ -687,6 +717,9 @@
 				8F346BAB1F22CA3400CEA0B4 /* AVFoundation.framework */,
 				8F346BA71F22CA2600CEA0B4 /* EventKit.framework */,
 				8F346BA81F22CA2600CEA0B4 /* EventKitUI.framework */,
+				E79E76854F11C0442C6F7DA3 /* Pods_Archer_Invasion.framework */,
+				CA3947BA0A0E7EE0C7411F0C /* Pods_Archer_InvasionTests.framework */,
+				78E8173F062EF25FB63BE198 /* Pods_Archer_InvasionUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -762,6 +795,7 @@
 				8FB12CB11F18248600FDB4DF /* Archer InvasionUITests */,
 				8FB12C8A1F18248600FDB4DF /* Products */,
 				8F346BA41F22CA0900CEA0B4 /* Frameworks */,
+				89DEB3C6A65A0B9D5243B8E9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -797,6 +831,7 @@
 				8FD8D1011F215FB200A5FC9F /* Image textures */,
 				8FB12C9E1F18248600FDB4DF /* Info.plist */,
 				8F6C48111F1FBDE3003C5521 /* explosion.png */,
+				8F38C27C1F38DC25004F367A /* GoogleService-Info.plist */,
 			);
 			path = "Archer Invasion";
 			sourceTree = "<group>";
@@ -876,8 +911,8 @@
 		8FD8D1011F215FB200A5FC9F /* Image textures */ = {
 			isa = PBXGroup;
 			children = (
-				8FC8B7AF1F33881A00DC1CDA /* Big Explosion Cut Off.mp3 */,
-				8FC8B7AD1F33858E00DC1CDA /* cannonSoundFX.mp3 */,
+				8FC8B7AF1F33881A00DC1CDA /* Big Explosion Cut Off.caf */,
+				8FC8B7AD1F33858E00DC1CDA /* cannonSoundFX.caf */,
 				8F89C89F1F2FF688008AA190 /* cannonBall.png */,
 				8FFA9DAB1F2A58BD009E5D0F /* metal */,
 				8FFA9DA91F2A57C9009E5D0F /* brick */,
@@ -901,7 +936,7 @@
 			name = "Level 16";
 			sourceTree = "<group>";
 		};
-		8FEBF5BE1F3232A4009BF4C2 /* Levels 31-40 */ = {
+		8FEBF5BE1F3232A4009BF4C2 /* Levels 31-36 */ = {
 			isa = PBXGroup;
 			children = (
 				8FEBF5BF1F3232B2009BF4C2 /* Level 31 */,
@@ -911,7 +946,7 @@
 				8FEBF5E41F32809A009BF4C2 /* Level 35 */,
 				8FF16E481F34F92700FE9080 /* Level 36 */,
 			);
-			name = "Levels 31-40";
+			name = "Levels 31-36";
 			sourceTree = "<group>";
 		};
 		8FEBF5BF1F3232B2009BF4C2 /* Level 31 */ = {
@@ -981,7 +1016,7 @@
 				8F0949051F2905D800912217 /* Levels 1-10 */,
 				8F0949061F2905E800912217 /* Levels 11-20 */,
 				8FFA9DB11F2AAC7D009E5D0F /* Levels 21-30 */,
-				8FEBF5BE1F3232A4009BF4C2 /* Levels 31-40 */,
+				8FEBF5BE1F3232A4009BF4C2 /* Levels 31-36 */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -1082,9 +1117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FB12CB71F18248600FDB4DF /* Build configuration list for PBXNativeTarget "Archer Invasion" */;
 			buildPhases = (
+				AA58F97531A08269FB2C56AF /* [CP] Check Pods Manifest.lock */,
 				8FB12C851F18248600FDB4DF /* Sources */,
 				8FB12C861F18248600FDB4DF /* Frameworks */,
 				8FB12C871F18248600FDB4DF /* Resources */,
+				BA9560CB7EC899C9154FD54B /* [CP] Embed Pods Frameworks */,
+				3646C0A1A24ADE1B9DCB8B36 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1099,9 +1137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FB12CBA1F18248600FDB4DF /* Build configuration list for PBXNativeTarget "Archer InvasionTests" */;
 			buildPhases = (
+				A087D00AB5C1FCA0C3FAD240 /* [CP] Check Pods Manifest.lock */,
 				8FB12C9F1F18248600FDB4DF /* Sources */,
 				8FB12CA01F18248600FDB4DF /* Frameworks */,
 				8FB12CA11F18248600FDB4DF /* Resources */,
+				0536E455E89BC757A675F019 /* [CP] Embed Pods Frameworks */,
+				3B1F9614F08A4DC9A0242662 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1117,9 +1158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FB12CBD1F18248600FDB4DF /* Build configuration list for PBXNativeTarget "Archer InvasionUITests" */;
 			buildPhases = (
+				6FF6B3C13A26D10309985542 /* [CP] Check Pods Manifest.lock */,
 				8FB12CAA1F18248600FDB4DF /* Sources */,
 				8FB12CAB1F18248600FDB4DF /* Frameworks */,
 				8FB12CAC1F18248600FDB4DF /* Resources */,
+				B52575DFAFE3075C31AD9F4D /* [CP] Embed Pods Frameworks */,
+				EA95199403BD5E072A140494 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1222,7 +1266,7 @@
 				8F33B31A1F3399D90017CB31 /* button_next-level (1).png in Resources */,
 				8F33B3561F339DFA0017CB31 /* button_level 30 (1).png in Resources */,
 				8F0948F61F29006500912217 /* Level_17.sks in Resources */,
-				8FC8B7AE1F33858E00DC1CDA /* cannonSoundFX.mp3 in Resources */,
+				8FC8B7AE1F33858E00DC1CDA /* cannonSoundFX.caf in Resources */,
 				8F89C8801F2F8B16008AA190 /* Level_27.sks in Resources */,
 				8F0949151F290A4800912217 /* button_level 20.png in Resources */,
 				8FD065B81F26643700154D9B /* button_level 11.png in Resources */,
@@ -1251,7 +1295,7 @@
 				8FD065A11F26500300154D9B /* button_level_7.png in Resources */,
 				8F33B3541F339DE30017CB31 /* button_level 29 (1).png in Resources */,
 				8F09490B1F29076600912217 /* Level_19.sks in Resources */,
-				8FC8B7B01F33881A00DC1CDA /* Big Explosion Cut Off.mp3 in Resources */,
+				8FC8B7B01F33881A00DC1CDA /* Big Explosion Cut Off.caf in Resources */,
 				8F8DF2851F26B6DB00FF8C75 /* Level_15.sks in Resources */,
 				8F0A69061F2B9785006290AE /* Level_23.sks in Resources */,
 				8FFA9DB41F2AAD0C009E5D0F /* button_level 21.png in Resources */,
@@ -1283,6 +1327,7 @@
 				8FEBF5C31F323692009BF4C2 /* button_level 31.png in Resources */,
 				8FB12CD11F18269400FDB4DF /* Obstacle.sks in Resources */,
 				8F0A69171F2BECA7006290AE /* button_level 26.png in Resources */,
+				8F38C27D1F38DC25004F367A /* GoogleService-Info.plist in Resources */,
 				8F33B3161F3399650017CB31 /* button_restart (1).png in Resources */,
 				8F7E24691F216BBD00EEF091 /* cannonFire.png in Resources */,
 				8FD8D0FE1F215EF300A5FC9F /* LevelSelect.sks in Resources */,
@@ -1339,6 +1384,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0536E455E89BC757A675F019 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Archer InvasionTests/Pods-Archer InvasionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3646C0A1A24ADE1B9DCB8B36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Archer Invasion/Pods-Archer Invasion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B1F9614F08A4DC9A0242662 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Archer InvasionTests/Pods-Archer InvasionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FF6B3C13A26D10309985542 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Archer InvasionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A087D00AB5C1FCA0C3FAD240 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Archer InvasionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA58F97531A08269FB2C56AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Archer Invasion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B52575DFAFE3075C31AD9F4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Archer InvasionUITests/Pods-Archer InvasionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA9560CB7EC899C9154FD54B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Archer Invasion/Pods-Archer Invasion-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Archer Invasion/Pods-Archer Invasion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA95199403BD5E072A140494 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Archer InvasionUITests/Pods-Archer InvasionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FB12C851F18248600FDB4DF /* Sources */ = {
@@ -1538,6 +1735,7 @@
 		};
 		8FB12CB81F18248600FDB4DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7657C40964479E4F664C7C5 /* Pods-Archer Invasion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1560,6 +1758,7 @@
 		};
 		8FB12CB91F18248600FDB4DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E121A4F1202130B949826B /* Pods-Archer Invasion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1581,6 +1780,7 @@
 		};
 		8FB12CBB1F18248600FDB4DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A865BAD73D20DE54E17FD8 /* Pods-Archer InvasionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1596,6 +1796,7 @@
 		};
 		8FB12CBC1F18248600FDB4DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5BF534D484412CFE07A76A /* Pods-Archer InvasionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1611,6 +1812,7 @@
 		};
 		8FB12CBE1F18248600FDB4DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD27C2432ADC829A027D786 /* Pods-Archer InvasionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7B2963LG49;
@@ -1625,6 +1827,7 @@
 		};
 		8FB12CBF1F18248600FDB4DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC3A71E52C274DB1473452C /* Pods-Archer InvasionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7B2963LG49;
