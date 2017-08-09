@@ -370,6 +370,3 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         origin.run(SKAction.rotate(toAngle: CGFloat(atan(y/x)), duration: 0.05))
     }
 }
-
-
-
