@@ -88,6 +88,7 @@
 		8F351E9B1F2121A800782C8F /* Level_2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F351E9A1F2121A800782C8F /* Level_2.sks */; };
 		8F351E9D1F214B0A00782C8F /* Level_3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F351E9C1F214B0A00782C8F /* Level_3.sks */; };
 		8F38C27D1F38DC25004F367A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F38C27C1F38DC25004F367A /* GoogleService-Info.plist */; };
+		8F3C8ED51F3CC04200255C57 /* LaunchBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C8ED41F3CC04200255C57 /* LaunchBoard.swift */; };
 		8F6C48121F1FBDE3003C5521 /* explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C48111F1FBDE3003C5521 /* explosion.png */; };
 		8F6E53E61F1E725100DE75DA /* alienShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E53E51F1E725100DE75DA /* alienShip.png */; };
 		8F6E53EC1F1E8D9F00DE75DA /* object.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F6E53EB1F1E8D9F00DE75DA /* object.sks */; };
@@ -304,6 +305,7 @@
 		8F351E9A1F2121A800782C8F /* Level_2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_2.sks; sourceTree = "<group>"; };
 		8F351E9C1F214B0A00782C8F /* Level_3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_3.sks; sourceTree = "<group>"; };
 		8F38C27C1F38DC25004F367A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F3C8ED41F3CC04200255C57 /* LaunchBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBoard.swift; sourceTree = "<group>"; };
 		8F6C48111F1FBDE3003C5521 /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
 		8F6E53E51F1E725100DE75DA /* alienShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alienShip.png; sourceTree = "<group>"; };
 		8F6E53EB1F1E8D9F00DE75DA /* object.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = object.sks; sourceTree = "<group>"; };
@@ -828,6 +830,7 @@
 				8FB12C961F18248600FDB4DF /* Main.storyboard */,
 				8FF16E521F35278E00FE9080 /* Assets.xcassets */,
 				8FB12C9B1F18248600FDB4DF /* LaunchScreen.storyboard */,
+				8F3C8ED41F3CC04200255C57 /* LaunchBoard.swift */,
 				8FD8D1011F215FB200A5FC9F /* Image textures */,
 				8FB12C9E1F18248600FDB4DF /* Info.plist */,
 				8F6C48111F1FBDE3003C5521 /* explosion.png */,
@@ -1566,6 +1569,7 @@
 				8FD065A31F26547300154D9B /* Level_8.swift in Sources */,
 				8F0A69041F2B9767006290AE /* Level_23.swift in Sources */,
 				8FB12C951F18248600FDB4DF /* GameViewController.swift in Sources */,
+				8F3C8ED51F3CC04200255C57 /* LaunchBoard.swift in Sources */,
 				8FF75A571F2283770092AD17 /* Level_6.swift in Sources */,
 				8F89C87E1F2F8B06008AA190 /* Level_27.swift in Sources */,
 				8F89C8931F2F93EE008AA190 /* Level_36.swift in Sources */,
