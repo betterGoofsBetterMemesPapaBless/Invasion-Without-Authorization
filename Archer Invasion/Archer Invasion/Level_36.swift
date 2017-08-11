@@ -105,7 +105,7 @@ class Level_36: SKScene, SKPhysicsContactDelegate
             
             let scene = GameScene.level(self.currentLevel) as GameScene!
             
-            scene?.scaleMode = .aspectFill
+            scene?.scaleMode = .aspectFit
             
             skView?.presentScene(scene)
         }
